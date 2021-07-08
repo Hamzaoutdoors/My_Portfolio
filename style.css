@@ -7,9 +7,8 @@
   --primary-4: #fff5e1;
   --neutral: #dbd8d7;
 }
-*,
-*:before,
-*:after {
+
+* {
   box-sizing: border-box;
 }
 
@@ -22,22 +21,25 @@ body {
 a {
   text-decoration: none;
 }
+
 header {
   z-index: 1;
   background: var(--toolbar-color);
   width: 100%;
   height: 92px;
-  top: 0px;
+  top: 0;
 }
+
 .nav-bar {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 10px 12px;
 }
+
 .nav-bar h3 {
   position: absolute;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -49,6 +51,7 @@ header {
   top: 50%;
   transform: translateY(10%);
 }
+
 .nav-bar img {
   position: absolute;
   padding: 8px;
@@ -72,7 +75,7 @@ section > .container {
 .headline-title {
   z-index: 2;
   color: var(--primary-1);
-  font-family: Crete Round;
+  font-family: Crete Round, sans-serif;
   font-style: normal;
   text-transform: capitalize;
   font-size: 56px;
@@ -82,11 +85,13 @@ section > .container {
   width: 100%;
   margin-left: 1.5rem;
 }
+
 .headline-content {
   margin: 24px;
 }
+
 .content-title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -95,24 +100,27 @@ section > .container {
   color: var(--primary-4);
   align-items: center;
 }
+
 .body {
-  font-family: Poppins;
+  font-family: Poppinsn, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
 }
+
 .social-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
   left: 24px;
   top: 430px;
 }
+
 .illustration-header-mobile {
   position: absolute;
   bottom: 0;
