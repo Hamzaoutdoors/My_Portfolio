@@ -1,10 +1,10 @@
 # Portfolio project
-setup and mobile version skeleton
+
+Setup and mobile version skeleton
+
+![portfolioScreenshot](https://user-images.githubusercontent.com/80895497/124910440-81039d00-dfe3-11eb-8d8d-2a669bb82f23.png)
 
 Screenshot of Template 2, that I choose for my my Portfolio
-
-![Alt text](/../<created_toolbar>/path/to/portfolioScreenshot.png?raw=true "Optional Title")
-
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
