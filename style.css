@@ -67,12 +67,10 @@ header {
 
 .headline-title {
   color: var(--primary-1);
-  font-family: Crete Round, sans-serif;
+  font-family: Crete Round;
   text-transform: capitalize;
-  font-size: 45px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
-  width: 100%;
+  font-size: 3rem;
+  letter-spacing: .2rem;
   margin-left: 1.5rem;
 }
 
