@@ -1,8 +1,13 @@
 # Portfolio project
 
-Setup and mobile version skeleton
+Portfolio mobile version : 
 
-![portfolioScreenshot](https://user-images.githubusercontent.com/80895497/124910440-81039d00-dfe3-11eb-8d8d-2a669bb82f23.png)
+![projects](https://user-images.githubusercontent.com/80895497/125138950-822dea80-e107-11eb-8791-7d04f460c349.png)
+
+the "About myself" section (placed after the projects and before the contact form):
+
+
+![About](https://user-images.githubusercontent.com/80895497/125139017-a5f13080-e107-11eb-98f6-9289ad4c9bce.png)
 
 Screenshot of Template 2, that I choose for my my Portfolio
 
@@ -20,7 +25,7 @@ The goal for this project is to keep practicing linters, learn how
 
 # Project Portfolio
 
-> Project is "Portfolio : setup and mobile version skeleton"
+> Project is "Portfolio: mobile version"
 
 Additional description about the project and its features.
 
@@ -28,6 +33,7 @@ Additional description about the project and its features.
 
 - Major languages
   - HTML AND CSS
+   -- Grid & FlexBox lay out
   - Linters, Node.js AND GIT
 
 ## Live Demo
@@ -67,4 +73,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : third project
+- Module 1 : project portfolio (week one)
