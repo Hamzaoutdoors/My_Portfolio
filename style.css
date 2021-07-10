@@ -10,6 +10,10 @@
   --warning-color: #f55800;
 }
 
+.color-white {
+  color: #fff;
+}
+
 .btn-primary {
   background-color: var(--warning-color);
   color: #fff;
@@ -73,6 +77,14 @@ header {
   display: flex;
 }
 
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
 /* Code */
 .nav-bar {
   justify-content: space-between;
@@ -82,13 +94,11 @@ header {
 .log,
 .content-title {
   font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: bold;
 }
 
 .nav-bar .logo {
   font-size: 18px;
-  color: #fff;
 }
 
 .nav-bar img {
@@ -100,10 +110,6 @@ header {
   background: var(--theme-color);
   width: 100%;
   min-height: 750px;
-}
-
-.headline-container {
-  flex-direction: column;
 }
 
 .section-title {
@@ -126,11 +132,9 @@ header {
 
 .body {
   font-family: Poppinsn, sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
 }
 
 .headline-content .body {
@@ -171,7 +175,6 @@ header {
 }
 
 .projects-title {
-  flex-direction: column;
   color: #212121;
   max-width: 100%;
 }
@@ -196,7 +199,6 @@ header {
 }
 
 .multi-poste {
-  flex-direction: column;
   margin-top: 80px;
 }
 
@@ -211,7 +213,6 @@ header {
 .multi-poste p,
 .languages > li {
   font-family: Inter, sans-serif;
-  font-style: normal;
   font-size: 16px;
   line-height: 24px;
 }
@@ -231,7 +232,6 @@ header {
 
 .card-item {
   position: relative;
-  flex-direction: column;
   background-image: url(./image_icons/project_item.svg);
   background-size: cover;
   background-position: center;
@@ -246,10 +246,8 @@ header {
 
 .card > h3 {
   font-family: Crete Round, sans-serif;
-  font-style: normal;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
   padding-top: 40px;
   padding-bottom: 0;
 }
@@ -257,16 +255,13 @@ header {
 .card > p {
   top: 150px;
   font-family: Inter, sans-serif;
-  font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
   padding-top: 0;
 }
 
 .card .card-languages li {
   background-color: rgba(255, 255, 255, 0.24);
-  color: #fff;
   border: none;
 }
 
@@ -298,7 +293,6 @@ header {
 }
 
 .about-header > p {
-  color: #fff;
   margin-top: 0;
   padding: 20px 0;
 }
@@ -325,11 +319,6 @@ header {
   grid-template-columns: repeat(1, 45% [col-start]);
   justify-content: center;
   align-content: center;
-  color: #fff;
-}
-
-.skills-language {
-  flex-direction: column;
 }
 
 .skill-title h3 {
