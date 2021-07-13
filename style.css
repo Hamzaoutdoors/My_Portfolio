@@ -38,10 +38,12 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -57,20 +59,14 @@ li {
 
 ul {
   display: grid;
-  grid-gap: 50px 12px;
-  grid-template-columns: 80px 80px 120px 90px;
+  grid-template-columns: 80px 80px 110px 80px;
+  column-gap: 10px;
   padding-left: 0;
 }
 
 ul li {
   text-align: center;
   font-weight: 500;
-}
-
-header {
-  background: var(--toolbar-color);
-  width: 100%;
-  height: 92px;
 }
 
 .d-flex {
@@ -87,8 +83,17 @@ header {
 
 /* Code */
 .nav-bar {
+  background: var(--toolbar-color);
+  padding: 0 25px;
+  height: 10vh;
+  width: 100%;
   justify-content: space-between;
-  padding: 10px 12px;
+  align-items: center;
+  position: fixed;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  z-index: 1;
 }
 
 .log,
@@ -97,21 +102,15 @@ header {
   font-weight: bold;
 }
 
-.nav-bar .logo {
-  font-size: 18px;
-}
-
-.nav-bar img {
-  padding: 8px;
-  right: 24px;
-}
-
 .black-section {
   background: var(--theme-color);
   width: 100%;
-  min-height: 750px;
+  min-height: 70vh;
 }
-
+.headline-container {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
 .section-title {
   color: var(--primary-1);
   font-family: Crete Round, sans-serif;
@@ -127,7 +126,7 @@ header {
 }
 
 .headline-content {
-  margin: 24px;
+  margin: 0px 24px;
 }
 
 .body {
@@ -156,14 +155,16 @@ header {
   left: 24px;
   top: 430px;
 }
-
-.illustration-header-mobile {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 250px;
+.image-headline {
+  max-height: 45vh;
 }
-
+.image-headline img {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  left: 35vw;
+  top: -40vw;
+}
 .projects {
   position: relative;
 }
@@ -189,13 +190,13 @@ header {
 .pro-title {
   font-size: 3rem;
   line-height: 40px;
-  width: 100%;
+  width: 400px;
 }
 
 .underline {
   background-color: #212121;
   height: 1px;
-  width: calc(100% - 24px);
+  min-width: calc(375px - 24px);
 }
 
 .multi-poste {
@@ -303,15 +304,18 @@ header {
   font-size: 17px;
 }
 
-.image-about {
-  align-self: flex-end;
-  height: 200px;
-  width: 150px;
+.image-about img {
+  position: relative;
+  left: 60vw;
+  top: 0px;
 }
 
 .about-under {
   background-color: #fff;
   align-self: center;
+  height: 1px;
+  min-width: 90%;
+  margin: 50px;
 }
 
 .skills-container {
@@ -335,10 +339,6 @@ header {
 }
 
 /* End About section */
-
-/* Skills section */
-
-/* End Skills section */
 
 /* Media queries */
 

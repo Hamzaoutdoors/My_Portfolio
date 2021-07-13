@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
 
     <title>My Portfolio</title>
   </head>
   <body>
-    <!-- Header section -->
-    <header class="header">
-      <nav class="nav-bar d-flex">
-        <a href="#"><h3 class="logo color-white">Ha Ell</h3></a>
-        <img src="./image_icons/Icon-Menu.svg" alt="bar icon" />
-      </nav>
-    </header>
-    <!-- End of Header section -->
     <!-- Headline section -->
-    <section class="black-section headline-section">
+    <nav class="nav-bar d-flex color-white">
+      <a href="#" class="color-white">Hamza Ell</a>
+      <a><i class="fa fa-bars"></i></a>
+    </nav>
+
+    <section class="black-section d-flex flex-dir-col">
       <div class="headline-container d-flex flex-dir-col">
         <div class="headline-title section-title">
           <h2 class="fw-normal">hey there.</h2>
@@ -39,7 +41,6 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
           </p>
-
           <ul class="social-icon d-flex">
             <li class="social-item">
               <a href="#" target="_blank"
@@ -64,10 +65,14 @@
           </ul>
         </div>
       </div>
-      <div class="illustration-header-mobile">
-        <img src="./image_icons/illustration-header-mobile@2x.svg" alt="img" />
+      <div class="image-headline">
+        <img
+          src="./image_icons/desctop__images/big-header.svg"
+          alt="background-headline"
+        />
       </div>
     </section>
+
     <!-- End of Headline section -->
     <!-- Projects section -->
     <section class="projects">
@@ -98,7 +103,7 @@
           </button>
         </div>
         <div class="cards-container">
-          <div class="card-item d-flex d-flex ">
+          <div class="card-item d-flex d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -221,22 +226,25 @@
           Get My Resume
         </button>
       </div>
-      <div class="image-about">
+      <div class="image-container image-about">
         <img
-          src="./image_icons/Frame-about.svg"
+          src="./image_icons/desctop__images/big-aboutme.svg"
           alt="frame-image"
-          width="200"
-          height="190"
         />
       </div>
-      <div class="underline about-under"></div>
+      <div class="about-under"></div>
       <div class="skills-container color-white">
         <ul class="skills-language">
           <li>
-            <div class="skill-title d-flex ">
-              <img src="./image_icons/Rectangle-inverse.svg" alt="rectangle" />
-              <h3>Languages</h3>
-            </div>
+            <ul>
+              <li class="skill-title d-flex">
+                <img
+                  src="./image_icons/Rectangle-inverse.svg"
+                  alt="rectangle"
+                />
+                <h3>Languages</h3>
+              </li>
+            </ul>
             <ul>
               <li><h4>Javascipt</h4></li>
             </ul>
@@ -300,5 +308,10 @@
       </div>
     </section>
     <!-- End of About-me section -->
+    <!-- Contact section -->
+    <section>
+      <div class="contact-container"></div>
+    </section>
+    <!-- End of Contact section -->
   </body>
 </html>
