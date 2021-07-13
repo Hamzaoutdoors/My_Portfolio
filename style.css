@@ -339,12 +339,57 @@ ul li {
 }
 
 /* End About section */
+/* Contact section */
+.contact-container {
+  margin: 28vh 24px;
+}
 
+.contact-title {
+  color: #172b4d;
+  font-family: Inter, sans-serif;
+  font-size: 2.5rem;
+  line-height: 44px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.contact-container input {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #dbd8d7;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-top: 39px;
+  height: 30px;
+  padding: 14px;
+}
+
+.contact-container textarea {
+  border: none;
+  background-color: #fbf8f7;
+  height: 114px;
+}
+
+.contact-btn {
+  width: 131px;
+  height: 48px;
+  font-size: 17px;
+  align-self: center;
+}
+/* End Contact section */
 /* Media queries */
 
-@media and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-container {
+    flex-direction: row;
   }
 }

@@ -310,7 +310,32 @@
     <!-- End of About-me section -->
     <!-- Contact section -->
     <section>
-      <div class="contact-container"></div>
+      <div class="contact-container d-flex flex-dir-col">
+        <h3 class="contact-title">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h3>
+        <form
+          action="https://formspree.io/f/mayadege"
+          method="post"
+        >
+          <ul class="d-flex flex-dir-col">
+            <li>
+              <label for="name"></label>
+              <input type="text" id="name" name="user_name" placeholder="Full name"/>
+            </li>
+            <li>
+              <label for="mail"></label>
+              <input type="email" id="mail" name="user_email" placeholder="Email adress"/>
+            </li>
+            <li>
+              <label for="msg"></label>
+              <textarea id="msg" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+            </li>
+          </ul>
+        </form>
+        <input type="submit" value="Get In Touch" class="btn-primary contact-btn">
+      </div>
     </section>
     <!-- End of Contact section -->
   </body>
