@@ -89,6 +89,10 @@ ul li {
   flex-direction: column;
 }
 
+.d-grid {
+  display: grid;
+}
+
 .fw-normal {
   font-weight: normal;
 }
@@ -250,7 +254,6 @@ p,
 }
 
 .cards-container {
-  display: grid;
   grid-template-columns: repeat(1, 100% [col-start]);
 }
 
@@ -341,7 +344,6 @@ p,
 }
 
 .skills-container {
-  display: grid;
   grid-template-columns: repeat(1, 45% [col-start]);
   justify-content: center;
   align-content: center;
@@ -406,6 +408,7 @@ textarea {
   height: 48px;
   font-size: 17px;
   align-self: center;
+  margin: 20px 0;
 }
 
 .footer {
@@ -429,7 +432,6 @@ textarea {
 
 @media only screen and (min-width: 800px) {
   .card-container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
