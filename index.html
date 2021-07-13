@@ -44,22 +44,22 @@
           <ul class="social-icon d-flex">
             <li class="social-item">
               <a href="#" target="_blank"
-                ><img src="./image_icons/Icon-GitHub.svg" alt="github"
+                ><img src="./image_icons/social-icons-header/Icon-GitHub.svg" alt="github"
               /></a>
             </li>
             <li class="social-item">
               <a href="#" target="_blank"
-                ><img src="./image_icons/Icon-Linkedin.svg" alt="Linkedin"
+                ><img src="./image_icons/social-icons-header/Icon-Linkedin.svg" alt="Linkedin"
               /></a>
             </li>
             <li class="social-item">
               <a href="#" target="_blank"
-                ><img src="./image_icons/Icon-Angelist.svg" alt="Angelist"
+                ><img src="./image_icons/social-icons-header/Icon-Angelist.svg" alt="Angelist"
               /></a>
             </li>
             <li class="social-item">
               <a href="#" target="_blank"
-                ><img src="./image_icons/Icon-Twitter.svg" alt="Twitter"
+                ><img src="./image_icons/social-icons-header/Icon-Twitter.svg" alt="Twitter"
               /></a>
             </li>
           </ul>
@@ -77,10 +77,10 @@
     <!-- Projects section -->
     <section class="projects">
       <div class="projects-container">
-        <div class="projects-title d-flex flex-dir-col">
+        <nav class="projects-title d-flex flex-dir-col">
           <h2 class="pro-title">My Recent Works</h2>
           <div class="underline"></div>
-        </div>
+        </nav>
         <div class="multi-poste d-flex flex-dir-col">
           <img
             src="./image_icons/Img_Placeholder.svg"
@@ -103,7 +103,7 @@
           </button>
         </div>
         <div class="cards-container">
-          <div class="card-item d-flex d-flex">
+          <article class="card-item d-flex d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -119,8 +119,8 @@
             <button class="btn-primary btn-card" type="button">
               See Project
             </button>
-          </div>
-          <div class="card-item d-flex">
+          </article>
+          <article class="card-item d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -136,8 +136,8 @@
             <button class="btn-primary btn-card" type="button">
               See Project
             </button>
-          </div>
-          <div class="card-item d-flex">
+          </article>
+          <article class="card-item d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -153,8 +153,8 @@
             <button class="btn-primary btn-card" type="button">
               See Project
             </button>
-          </div>
-          <div class="card-item d-flex">
+          </article>
+          <article class="card-item d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -170,8 +170,8 @@
             <button class="btn-primary btn-card" type="button">
               See Project
             </button>
-          </div>
-          <div class="card-item d-flex">
+          </article>
+          <article class="card-item d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -187,8 +187,8 @@
             <button class="btn-primary btn-card" type="button">
               See Project
             </button>
-          </div>
-          <div class="card-item d-flex">
+          </article>
+          <article class="card-item d-flex">
             <div class="card color-white">
               <h3 class="fw-normal">Profesional Art Printing Data</h3>
               <p>
@@ -204,7 +204,7 @@
             <button class="btn-primary btn-card" type="button">
               See Project
             </button>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -212,7 +212,7 @@
 
     <!-- About me section -->
     <section class="black-section about-section">
-      <div class="about-header">
+      <nav class="about-header">
         <div class="section-title about-title">
           <h2 class="fw-normal">About me</h2>
         </div>
@@ -225,7 +225,7 @@
         <button class="btn-primary btn-about" type="button">
           Get My Resume
         </button>
-      </div>
+      </nav>
       <div class="image-container image-about">
         <img
           src="./image_icons/desctop__images/big-aboutme.svg"
@@ -315,28 +315,75 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h3>
-        <form
-          action="https://formspree.io/f/mayadege"
-          method="post"
-        >
+        <form action="https://formspree.io/f/mayadege" method="post">
           <ul class="d-flex flex-dir-col">
             <li>
               <label for="name"></label>
-              <input type="text" id="name" name="user_name" placeholder="Full name"/>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Full name"
+              />
             </li>
             <li>
               <label for="mail"></label>
-              <input type="email" id="mail" name="user_email" placeholder="Email adress"/>
+              <input
+                type="email"
+                id="mail"
+                name="user_email"
+                placeholder="Email adress"
+              />
             </li>
             <li>
               <label for="msg"></label>
-              <textarea id="msg" name="user_message" placeholder="Enter text here" maxlength="500"></textarea>
+              <textarea
+                id="msg"
+                name="user_message"
+                placeholder="Enter text here"
+                maxlength="500"
+              ></textarea>
             </li>
           </ul>
         </form>
-        <input type="submit" value="Get In Touch" class="btn-primary contact-btn">
+        <input
+          type="submit"
+          value="Get in Touch"
+          class="btn-primary contact-btn"
+        />
       </div>
     </section>
+    <footer>
+      <div class="footer d-flex flex-dir-col">
+        <ul class="social-icon d-flex">
+          <li class="social-item">
+            <a href="#" target="_blank"
+              ><img src="./image_icons/social-icons-footer/Icon-GitHub.svg" alt="github"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank"
+              ><img src="./image_icons/social-icons-footer/Icon-Linkedin.svg" alt="Linkedin"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank"
+              ><img src="./image_icons/social-icons-footer/Icon-Angelist.svg" alt="Angelist"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a href="#" target="_blank"
+              ><img src="./image_icons/social-icons-footer/Icon-Twitter.svg" alt="Twitter"
+            /></a>
+          </li>
+        </ul>
+        <img
+          src="./image_icons/Light.svg"
+          alt="footer-bar"
+          class="footer-bar"
+        />
+      </div>
+    </footer>
     <!-- End of Contact section -->
   </body>
 </html>

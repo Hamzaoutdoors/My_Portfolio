@@ -4,10 +4,10 @@ Portfolio mobile version :
 
 ![projects](https://user-images.githubusercontent.com/80895497/125138950-822dea80-e107-11eb-8791-7d04f460c349.png)
 
-the "About myself" section (placed after the projects and before the contact form):
+the "Contact" section (placed after the projects and before the contact form):
 
+![Contact](https://user-images.githubusercontent.com/80895497/125529939-da548be9-0768-4b89-a1de-ad0280a403c0.PNG)
 
-![About](https://user-images.githubusercontent.com/80895497/125139017-a5f13080-e107-11eb-98f6-9289ad4c9bce.png)
 
 Screenshot of Template 2, that I choose for my my Portfolio
 
@@ -19,6 +19,8 @@ The goal for this project is to keep practicing linters, learn how
 
 - Keep practicing linters
 - Understand how to parse a Figma design to create a UI.
+- Understanding UX and forms
+- Contribution to project with Pair-pragramming method
 - Flexbox to place elements in the page.
 - Build a personal portfolio site.
 - Use images and backgrounds to enhance the look of the website.
@@ -29,11 +31,15 @@ The goal for this project is to keep practicing linters, learn how
 
 Additional description about the project and its features.
 
+Learn how to make Forms
+Understand the importance of UX.
+Understand how to parse a Figma design to create a UI.
+
 ## Built With
 
 - Major languages
   - HTML AND CSS
-   -- Grid & FlexBox lay out
+   -- FlexBox lay out and Forms
   - Linters, Node.js AND GIT
 
 ## Live Demo

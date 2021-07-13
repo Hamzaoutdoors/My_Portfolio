@@ -8,17 +8,20 @@
   --primary-4: #fff5e1;
   --neutral: #dbd8d7;
   --warning-color: #f55800;
+  --active-color: #e05304;
+  --neutral9: #f4f1f0;
+  --white: #fff;
 }
 
 .color-white {
-  color: #fff;
+  color: var(--white);
 }
 
 .btn-primary {
   background-color: var(--warning-color);
-  color: #fff;
-  padding: 12px;
   font-family: Inter, sans-serif;
+  color: var(--white);
+  padding: 12px;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -28,6 +31,16 @@
   background: var(--primary-4);
   color: var(--warning-color);
   border: 1px solid var(--warning-color);
+}
+
+.btn-primary:active {
+  background-color: var(--active-color);
+  color: var(--neutral9);
+}
+
+.btn-primary:disabled {
+  background-color: var(--neutral9);
+  color: #5b5957;
 }
 
 * {
@@ -47,7 +60,6 @@ a {
 }
 
 p {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
@@ -82,6 +94,14 @@ ul li {
 }
 
 /* Code */
+p,
+.multi-poste p,
+.languages > li,
+.skills-language h4,
+.contact-title {
+  font-family: Inter, sans-serif;
+}
+
 .nav-bar {
   background: var(--toolbar-color);
   padding: 0 25px;
@@ -89,13 +109,12 @@ ul li {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   z-index: 1;
 }
 
+.nav-bar,
 .log,
 .content-title {
   font-family: Roboto, sans-serif;
@@ -107,10 +126,12 @@ ul li {
   width: 100%;
   min-height: 70vh;
 }
+
 .headline-container {
   margin-top: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
 .section-title {
   color: var(--primary-1);
   font-family: Crete Round, sans-serif;
@@ -126,14 +147,15 @@ ul li {
 }
 
 .headline-content {
-  margin: 0px 24px;
+  margin: 0 24px;
 }
 
 .body {
   font-family: Poppinsn, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
 }
 
 .headline-content .body {
@@ -151,13 +173,14 @@ ul li {
   justify-content: space-between;
   padding: 0;
   width: 200px;
-  height: 40px;
   left: 24px;
   top: 430px;
 }
+
 .image-headline {
   max-height: 45vh;
 }
+
 .image-headline img {
   position: relative;
   width: 550px;
@@ -165,6 +188,7 @@ ul li {
   left: 35vw;
   top: -40vw;
 }
+
 .projects {
   position: relative;
 }
@@ -213,7 +237,6 @@ ul li {
 
 .multi-poste p,
 .languages > li {
-  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -255,9 +278,8 @@ ul li {
 
 .card > p {
   top: 150px;
-  font-family: Inter, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 25px;
   padding-top: 0;
 }
 
@@ -307,11 +329,11 @@ ul li {
 .image-about img {
   position: relative;
   left: 60vw;
-  top: 0px;
+  top: 0;
 }
 
 .about-under {
-  background-color: #fff;
+  background-color: var(--white);
   align-self: center;
   height: 1px;
   min-width: 90%;
@@ -333,24 +355,24 @@ ul li {
 }
 
 .skills-language h4 {
-  font-family: Inter, sans-serif;
   font-weight: normal;
   font-size: 22px;
 }
 
 /* End About section */
+
 /* Contact section */
+
 .contact-container {
   margin: 28vh 24px;
 }
 
 .contact-title {
   color: #172b4d;
-  font-family: Inter, sans-serif;
   font-size: 2.5rem;
-  line-height: 44px;
+  line-height: 43px;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 .contact-container input {
@@ -367,6 +389,10 @@ textarea {
   margin-top: 39px;
   height: 30px;
   padding: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .contact-container textarea {
@@ -381,7 +407,24 @@ textarea {
   font-size: 17px;
   align-self: center;
 }
+
+.footer {
+  border-top: 1px solid #dfe1e6;
+  justify-content: center;
+}
+
+.footer .social-icon {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.footer .footer-bar {
+  text-align: center;
+  margin-top: 0;
+}
+
 /* End Contact section */
+
 /* Media queries */
 
 @media only screen and (min-width: 800px) {
@@ -389,6 +432,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .contact-container {
     flex-direction: row;
   }
