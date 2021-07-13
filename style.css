@@ -417,3 +417,11 @@ textarea {
 .container > * {
   color: #dfe1e6;
 }
+
+button:active {
+  background: #5e42d7;
+}
+
+button:disabled {
+  background: #2a2b33;
+}
