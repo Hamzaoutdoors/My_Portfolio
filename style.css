@@ -103,7 +103,6 @@ p,
 }
 
 .nav-bar {
-  position: fixed;
   background: var(--toolbar-color);
   padding: 0 25px;
   height: 10vh;
@@ -366,7 +365,6 @@ p,
 
 .contact-container {
   margin: 28vh 24px;
-  margin-bottom: 10em;
 }
 
 .contact-title {
@@ -392,14 +390,6 @@ textarea {
   height: 30px;
   padding: 14px;
   font-family: Inter, sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.contact-container > input[type="text"], input[type="email"], textarea {
-  font-family: Inter;
-  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -446,27 +436,4 @@ textarea {
   .contact-container {
     flex-direction: row;
   }
-}
-
-.container {
-  width: 100vw;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  border-top: 1px solid #dfe1e6;
-  padding: 1em;
-}
-
-.container > * {
-  color: #dfe1e6;
-}
-
-button:active {
-  background: #5e42d7;
-}
-
-button:disabled {
-  background: #2a2b33;
 }
