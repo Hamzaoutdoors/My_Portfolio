@@ -23,12 +23,26 @@
   </head>
   <body>
     <!-- Headline section -->
-    <nav class="nav-bar d-flex color-white">
-      <a href="#" class="color-white">Hamza Ell</a>
-      <a><i class="fa fa-bars"></i></a>
+    <nav>
+      <ul class="nav-list color-white d-flex">
+        <li><a href="#" class="logo">Hamza Ell</a></li>
+        <li>
+          <ul class="d-flex">
+            <li class="nav-item"><a href="#">Portfolio</a></li>
+            <li class="nav-item"><a href="#About">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a href="#"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li class="toggle">
+              <a><i class="fa fa-bars"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
-    <section class="black-section d-flex flex-dir-col">
+    <section class="black-section headline-section d-flex flex-dir-col">
       <div class="headline-container d-flex flex-dir-col">
         <div class="headline-title section-title">
           <h2 class="fw-normal">hey there.</h2>
@@ -85,30 +99,33 @@
     <!-- Projects section -->
     <section class="projects">
       <div class="projects-container">
-        <nav class="projects-title d-flex flex-dir-col">
+        <div class="projects-title d-flex flex-dir-col">
           <h2 class="pro-title">My Recent Works</h2>
-          <div class="underline"></div>
-        </nav>
+          <span class="underline"></span>
+        </div>
         <div class="multi-poste d-flex flex-dir-col">
           <img
             src="./image_icons/Img_Placeholder.svg"
             alt="image_Placeholder"
           />
-          <h3 class="intru-title">Multi-Post Stories</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="languages">
-            <li><p>css</p></li>
-            <li><p>html</p></li>
-            <li><p>bootsrap</p></li>
-            <li><p>Ruby</p></li>
-          </ul>
-          <button class="btn-primary btn-project" type="button">
-            See Project
-          </button>
+          <article class="d-flex flex-dir-col">
+            <h3 class="intru-title">Multi-Post Stories</h3>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="languages">
+              <li><p>css</p></li>
+              <li><p>html</p></li>
+              <li><p>bootsrap</p></li>
+              <li><p>Ruby</p></li>
+            </ul>
+            <button class="btn-primary btn-project" type="button">
+              See Project
+            </button>
+          </article>
         </div>
         <div class="cards-container d-grid">
           <article class="card-item d-flex d-flex">
@@ -220,26 +237,29 @@
 
     <!-- About me section -->
     <section class="black-section about-section">
-      <div class="about-header">
-        <div class="section-title about-title">
-          <h2 class="fw-normal">About me</h2>
+      <div class="about-container">
+        <article class="about-header">
+          <div class="section-title about-title">
+            <h2 class="fw-normal">About me</h2>
+          </div>
+          <p class="color-white">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <button class="btn-primary btn-about" type="button">
+            Get My Resume
+          </button>
+        </article>
+        <div class="image-container image-about">
+          <img
+            src="./image_icons/desctop__images/big-aboutme.svg"
+            alt="frame-image"
+          />
         </div>
-        <p class="color-white">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <button class="btn-primary btn-about" type="button">
-          Get My Resume
-        </button>
       </div>
-      <div class="image-container image-about">
-        <img
-          src="./image_icons/desctop__images/big-aboutme.svg"
-          alt="frame-image"
-        />
-      </div>
+
       <div class="about-under"></div>
       <div class="skills-container color-white d-grid">
         <ul class="skills-language">
@@ -317,7 +337,7 @@
     </section>
     <!-- End of About-me section -->
     <!-- Contact section -->
-    <section>
+    <section class="contact-section">
       <div class="contact-container d-flex flex-dir-col">
         <h3 class="contact-title">
           I'm always interested in hearing about new projects, so if you'd like
