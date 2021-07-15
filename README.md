@@ -1,12 +1,9 @@
 # Portfolio project
 
-Portfolio mobile version : 
+Portfolio Desktop/Mobile version : 
 
-![projects](https://user-images.githubusercontent.com/80895497/125138950-822dea80-e107-11eb-8791-7d04f460c349.png)
+![Template 3-Main](https://user-images.githubusercontent.com/80895497/125659078-db3de05e-7d04-4a01-b28d-ec8cd070644c.png)
 
-the "Contact" section (placed after the projects and before the contact form):
-
-![Contact](https://user-images.githubusercontent.com/80895497/125529939-da548be9-0768-4b89-a1de-ad0280a403c0.PNG)
 
 
 Screenshot of Template 2, that I choose for my my Portfolio
@@ -23,15 +20,16 @@ The goal for this project is to keep practicing linters, learn how
 - Contribution to project with Pair-pragramming method
 - Flexbox to place elements in the page.
 - Build a personal portfolio site.
+- Responsive design with Media queries
 - Use images and backgrounds to enhance the look of the website.
 
 # Project Portfolio
 
-> Project is "Portfolio: mobile version"
+> Project is "Portfolio: desktop version"
 
 Additional description about the project and its features.
 
-Learn how to make Forms
+Learn how to code responsive website
 Understand the importance of UX.
 Understand how to parse a Figma design to create a UI.
 
@@ -40,6 +38,7 @@ Understand how to parse a Figma design to create a UI.
 - Major languages
   - HTML AND CSS
    -- FlexBox lay out and Forms
+   -- Media queries
   - Linters, Node.js AND GIT
 
 ## Live Demo
