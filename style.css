@@ -275,9 +275,11 @@ ul li {
   height: 550px;
   transition: transform 1s ease-out;
 }
+
 .card-item:hover {
   transform: scale(0.9);
 }
+
 .card {
   padding: 36px;
   padding-top: 32%;
