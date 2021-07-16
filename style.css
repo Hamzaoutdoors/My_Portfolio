@@ -101,14 +101,6 @@ ul li {
 
 /* Code */
 
-.logo{
-  transition: transform ease 3s;
-}
-
-.logo:hover{
-transform: scale(0.5);
-}
-
 .multi-poste p,
 .languages > li {
   font-size: 16px;
@@ -121,6 +113,15 @@ transform: scale(0.5);
 .skills-language h4,
 .contact-title {
   font-family: Inter, sans-serif;
+}
+
+.nav-item {
+  transition: all 2s ease;
+}
+
+.nav-item:hover {
+  transform: scale(0.8);
+  color: var(--active-color);
 }
 
 .nav-list {
