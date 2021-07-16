@@ -443,6 +443,38 @@ textarea {
 
 /* End Contact section */
 
+h4:hover {
+  animation-duration: 0.5s;
+  animation-name: scale;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2.3);
+    font-size: 20px;
+  }
+}
+
+.logo {
+  animation-duration: 3s;
+  animation-name: rotate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+    font-size: 20px;
+  }
+}
+
 /* Media queries */
 
 @media all and (min-width: 992px) {
