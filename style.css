@@ -116,6 +116,12 @@ ul li {
 }
 
 .nav-item {
+  font-size: 14px;
+  font-weight: 400;
+  display: none;
+  order: 2;
+  justify-self: flex-end;
+  margin-left: 30px;
   transition: all 2s ease;
 }
 
@@ -148,15 +154,6 @@ ul li {
 
 .toggle {
   order: 1;
-}
-
-.nav-item {
-  font-size: 14px;
-  font-weight: 400;
-  display: none;
-  order: 2;
-  justify-self: flex-end;
-  margin-left: 30px;
 }
 
 .nav-item:active {
