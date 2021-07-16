@@ -100,6 +100,15 @@ ul li {
 }
 
 /* Code */
+
+.logo{
+  transition: transform ease 3s;
+}
+
+.logo:hover{
+transform: scale(0.5);
+}
+
 .multi-poste p,
 .languages > li {
   font-size: 16px;
