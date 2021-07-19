@@ -41,7 +41,9 @@ Understand how to parse a Figma design to create a UI.
    -- Media queries
   - Linters, Node.js AND GIT
 
-## Live Demo (Deploy Project)
+## Live Demo 
+
+> Welcome to github page of my project
 
 [Live Demo Link](https://hamzaoutdoors.github.io/My_Portfolio/)
 
