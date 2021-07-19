@@ -100,6 +100,7 @@ ul li {
 }
 
 /* Code */
+
 .multi-poste p,
 .languages > li {
   font-size: 16px;
@@ -112,6 +113,21 @@ ul li {
 .skills-language h4,
 .contact-title {
   font-family: Inter, sans-serif;
+}
+
+.nav-item {
+  font-size: 14px;
+  font-weight: 400;
+  display: none;
+  order: 2;
+  justify-self: flex-end;
+  margin-left: 30px;
+  transition: all 2s ease;
+}
+
+.nav-item:hover {
+  transform: scale(0.8);
+  color: var(--active-color);
 }
 
 .nav-list {
@@ -138,15 +154,6 @@ ul li {
 
 .toggle {
   order: 1;
-}
-
-.nav-item {
-  font-size: 14px;
-  font-weight: 400;
-  display: none;
-  order: 2;
-  justify-self: flex-end;
-  margin-left: 30px;
 }
 
 .nav-item:active {
@@ -273,6 +280,11 @@ ul li {
   background-position: center;
   background-repeat: no-repeat;
   height: 550px;
+  transition: transform 1s ease-out;
+}
+
+.card-item:hover {
+  transform: scale(0.9);
 }
 
 .card {
@@ -428,6 +440,38 @@ textarea {
 }
 
 /* End Contact section */
+
+h4:hover {
+  animation-duration: 0.5s;
+  animation-name: scale;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2.3);
+    font-size: 20px;
+  }
+}
+
+.logo {
+  animation-duration: 3s;
+  animation-name: rotate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+    font-size: 20px;
+  }
+}
 
 /* Media queries */
 
