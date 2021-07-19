@@ -472,7 +472,26 @@ h4:hover {
     font-size: 20px;
   }
 }
+/* TEST */
+.row{
+  text-align: center;
+}
 
+.blue-stripe{
+  background-color: blue;
+  float: left;
+  width: 100%;
+}
+.red-stripe{
+  background-color: red;
+  float: left;
+  width: 100%;
+}
+.green-stripe{
+  background-color: green;
+  float: left;
+  width: 100%;
+}
 /* Media queries */
 
 @media all and (min-width: 992px) {
