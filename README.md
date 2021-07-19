@@ -80,4 +80,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : project portfolio (week one)
+- Module 1 : project portfolio (week three)
+
+## Accessibility
+
+- Page titles (My Portfolio) - no issues found
