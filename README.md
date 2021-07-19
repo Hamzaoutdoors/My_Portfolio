@@ -13,7 +13,7 @@ Screenshot of Template 2, that I choose for my my Portfolio
 The goal for this project is to keep practicing linters, learn how
 
 ## Learning objectives
-
+- Deploy Application with Github Pages
 - Keep practicing linters
 - Understand how to parse a Figma design to create a UI.
 - Understanding UX and forms
@@ -41,7 +41,7 @@ Understand how to parse a Figma design to create a UI.
    -- Media queries
   - Linters, Node.js AND GIT
 
-## Live Demo
+## Live Demo (Deploy Project)
 
 [Live Demo Link](https://hamzaoutdoors.github.io/My_Portfolio/)
 
