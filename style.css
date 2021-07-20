@@ -97,7 +97,6 @@ ul li {
 
 .fw-normal {
   font-weight: normal;
-  letter-spacing: 4px;
 }
 
 /* Code */
@@ -123,12 +122,20 @@ ul li {
   order: 2;
   justify-self: flex-end;
   margin-left: 30px;
-  transition: all 2s ease;
+  transition: transform 0.8s ease;
 }
 
 .nav-item:hover {
   transform: scale(0.8);
+}
+
+.nav-item a {
+  transition: all 0.2s;
+}
+
+.nav-item a:hover {
   color: var(--active-color);
+  text-shadow: 0.5px 0.5px var(--white);
 }
 
 .nav-list {
@@ -180,10 +187,9 @@ ul li {
   letter-spacing: 0.1rem;
 }
 
-.headline-title > h1 {
+.headline-title > h2 {
   margin: 0;
-  max-width: 435px;
-  
+  letter-spacing: 3px;
 }
 
 .body {
@@ -192,9 +198,7 @@ ul li {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 30px;
-}
-
-.headline-content .body {
+  max-width: 70vh;
   padding-right: 50px;
 }
 
@@ -443,11 +447,6 @@ textarea {
 }
 
 /* End Contact section */
-
-h4:hover {
-  animation-duration: 0.5s;
-  animation-name: scale;
-}
 
 @keyframes scale {
   from {
