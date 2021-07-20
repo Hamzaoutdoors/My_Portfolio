@@ -84,4 +84,7 @@ Give a ⭐️ if you like this project!
 
 ## Accessibility
 
+
 - Page titles (My Portfolio) - no issues found
+- Image text alternatives ("alt="alt text") - no issues found
+- Text headings added

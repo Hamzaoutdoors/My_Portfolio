@@ -97,6 +97,7 @@ ul li {
 
 .fw-normal {
   font-weight: normal;
+  letter-spacing: 4px;
 }
 
 /* Code */
@@ -179,8 +180,10 @@ ul li {
   letter-spacing: 0.1rem;
 }
 
-.headline-title > h2 {
+.headline-title > h1 {
   margin: 0;
+  max-width: 435px;
+  
 }
 
 .body {

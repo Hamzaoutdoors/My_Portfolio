@@ -18,6 +18,20 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-202611631-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-202611631-1", { send_page_view: false });
+    </script>
 
     <title>My Portfolio</title>
   </head>
@@ -45,16 +59,15 @@
     <section class="black-section headline-section d-flex flex-dir-col">
       <div class="headline-container d-flex flex-dir-col">
         <div class="headline-title section-title">
-          <h2 class="fw-normal">hey there.</h2>
-          <h2 class="fw-normal">I am Hamza</h2>
+          <h1 class="fw-normal">hey there.  I am Hamza</h1>
         </div>
         <div class="headline-content">
-          <p class="content-title">I am a software developer student</p>
-          <p class="body color-white">
+          <h2 class="content-title">I am a software developer student</h2>
+          <h3 class="body color-white">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
-          </p>
+          </h3>
           <ul class="social-icon d-flex">
             <li class="social-item">
               <a href="#" target="_blank"
@@ -425,7 +438,7 @@
         />
       </div>
     </footer>
- 
+
     <!-- End of Contact section -->
   </body>
 </html>
