@@ -183,7 +183,8 @@ ul li {
   letter-spacing: 0.1rem;
 }
 
-.headline-title > h2 {
+.headline-title h1,
+h2 {
   margin: 0;
   letter-spacing: 3px;
 }
@@ -440,7 +441,7 @@ textarea {
 
 /* End Contact section */
 
-/* scale transistion brought here*/
+/* scale transistion brought here */
 
 .nav-item:hover {
   transform: scale(0.8);
