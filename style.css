@@ -125,10 +125,6 @@ ul li {
   transition: transform 0.8s ease;
 }
 
-.nav-item:hover {
-  transform: scale(0.8);
-}
-
 .nav-item a {
   transition: all 0.2s;
 }
@@ -290,10 +286,6 @@ ul li {
   transition: transform 1s ease-out;
 }
 
-.card-item:hover {
-  transform: scale(0.9);
-}
-
 .card {
   padding: 36px;
   padding-top: 32%;
@@ -447,6 +439,15 @@ textarea {
 }
 
 /* End Contact section */
+/*  scale transistion brought here*/
+
+.nav-item:hover {
+  transform: scale(0.8);
+}
+
+.card-item:hover {
+  transform: scale(0.9);
+}
 
 @keyframes scale {
   from {
