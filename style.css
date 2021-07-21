@@ -43,7 +43,9 @@
   color: #5b5957;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -243,10 +245,11 @@ h2 {
 .pro-title {
   font-size: 3rem;
   line-height: 40px;
-  width: 400px;
+  width: 450px;
 }
 
 .underline {
+  margin-top: 20px;
   background-color: #212121;
   height: 1px;
   min-width: calc(375px - 24px);
