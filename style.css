@@ -43,7 +43,9 @@
   color: #5b5957;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -122,12 +124,16 @@ ul li {
   order: 2;
   justify-self: flex-end;
   margin-left: 30px;
-  transition: all 2s ease;
+  transition: transform 0.8s ease;
 }
 
-.nav-item:hover {
-  transform: scale(0.8);
+.nav-item a {
+  transition: all 0.2s;
+}
+
+.nav-item a:hover {
   color: var(--active-color);
+  text-shadow: 0.5px 0.5px var(--white);
 }
 
 .nav-list {
@@ -179,8 +185,10 @@ ul li {
   letter-spacing: 0.1rem;
 }
 
-.headline-title > h2 {
+.headline-title h1,
+h2 {
   margin: 0;
+  letter-spacing: 3px;
 }
 
 .body {
@@ -189,9 +197,7 @@ ul li {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 30px;
-}
-
-.headline-content .body {
+  max-width: 70vh;
   padding-right: 50px;
 }
 
@@ -239,10 +245,11 @@ ul li {
 .pro-title {
   font-size: 3rem;
   line-height: 40px;
-  width: 400px;
+  width: 450px;
 }
 
 .underline {
+  margin-top: 20px;
   background-color: #212121;
   height: 1px;
   min-width: calc(375px - 24px);
@@ -281,10 +288,6 @@ ul li {
   background-repeat: no-repeat;
   height: 550px;
   transition: transform 1s ease-out;
-}
-
-.card-item:hover {
-  transform: scale(0.9);
 }
 
 .card {
@@ -441,9 +444,14 @@ textarea {
 
 /* End Contact section */
 
-h4:hover {
-  animation-duration: 0.5s;
-  animation-name: scale;
+/* scale transistion brought here */
+
+.nav-item:hover {
+  transform: scale(0.8);
+}
+
+.card-item:hover {
+  transform: scale(0.9);
 }
 
 @keyframes scale {

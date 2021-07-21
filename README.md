@@ -80,4 +80,13 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : project portfolio (week one)
+- Module 1 : project portfolio (week three)
+
+## Accessibility Report 
+
+
+- Page titles (My Portfolio) - no issues found
+- Image text alternatives ("alt="alt text") - no issues found
+- Text headings added
+- No Color contrast needed
+- Resize text added

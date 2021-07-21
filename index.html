@@ -8,16 +8,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
       type="text/css"
     />
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -30,10 +33,18 @@
       }
       gtag("js", new Date());
 
+      add_accessibility
+
+
+      gtag("config", "UA-202611631-1", { send_page_view: false });
+    </script>
+    <script>
+
       gtag("config", "UA-202611631-1", { send_page_view: false });
     </script>
 
-    <title>My Portfolio</title>
+    <title>Hamza's Portfolio</title>
+    
   </head>
   <body>
     <!-- Headline section -->
@@ -59,11 +70,11 @@
     <section class="black-section headline-section d-flex flex-dir-col">
       <div class="headline-container d-flex flex-dir-col">
         <div class="headline-title section-title">
-          <h2 class="fw-normal">hey there.</h2>
-          <h2 class="fw-normal">I am Hamza</h2>
+          <h1 class="fw-normal">Hey there.</h1>
+          <h2 class="fw-normal">I am Hamza </h2>
         </div>
         <div class="headline-content">
-          <p class="content-title">I am a software developer student</p>
+          <h3 class="content-title">I am a software developer student</h3>
           <p class="body color-white">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
@@ -365,7 +376,7 @@
                 type="text"
                 id="name"
                 name="user_name"
-                placeholder="Full name"
+                placeholder="Full Name"
                 required
               />
             </li>
@@ -384,7 +395,7 @@
               <textarea
                 id="msg"
                 name="user_message"
-                placeholder="Enter text here"
+                placeholder="Enter some text here"
                 maxlength="500"
                 required
               ></textarea>
