@@ -22,7 +22,7 @@ The goal for this project is to keep practicing linters, learn how
 - Build a personal portfolio site.
 - Responsive design with Media queries
 - Use images and backgrounds to enhance the look of the website.
-- Learn JavaScript syntax and DOM
+- Learn JavaScript syntax and DOM interface
 
 # Project Portfolio
 
