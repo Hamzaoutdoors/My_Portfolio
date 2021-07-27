@@ -18,29 +18,39 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
-
+    <script src="./app.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
-    <!-- Headline section -->
-    <nav>
-      <ul class="nav-list color-white d-flex">
-        <li class="logo"><a href="#">Hamza Ell</a></li>
-        <li>
-          <ul class="d-flex">
-            <li class="nav-item"><a href="#">Portfolio</a></li>
-            <li class="nav-item"><a href="#About">About</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-            <li class="nav-item">
-              <a href="#"><i class="fa fa-envelope"></i></a>
-            </li>
-            <li class="toggle">
+    <!-- Header -->
+    <nav id="header">
+      <div class="header container">
+        <div class="nav-bar color-white d-flex">
+          <div class="logo"><a href="#">Hamza Ell</a></div>
+          <div class="nav-list">
+            <div class="hamburger">
               <a><i class="fa fa-bars"></i></a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+            </div>
+            <ul class="d-flex flex-dir-col">
+              <li class="nav-item">
+                <a href="#projects" data-after="Home">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" data-after="About">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" data-after="Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
+    <!-- End of Header -->
+    <!-- Hero section -->
 
     <section class="black-section headline-section d-flex flex-dir-col">
       <div class="headline-container d-flex flex-dir-col">
@@ -95,9 +105,9 @@
       </div>
     </section>
 
-    <!-- End of Headline section -->
+    <!-- End of Hero section -->
     <!-- Projects section -->
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="projects-container">
         <div class="projects-title d-flex flex-dir-col">
           <h2 class="pro-title">My Recent Works</h2>
@@ -236,7 +246,7 @@
     <!-- End of Projects section -->
 
     <!-- About me section -->
-    <section class="black-section about-section">
+    <section id="about" class="black-section about-section">
       <div class="about-container">
         <article class="about-header">
           <div class="section-title about-title">
@@ -337,7 +347,7 @@
     </section>
     <!-- End of About-me section -->
     <!-- Contact section -->
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <div class="contact-container d-flex flex-dir-col">
         <h3 class="contact-title">
           I'm always interested in hearing about new projects, so if you'd like
@@ -425,7 +435,7 @@
         />
       </div>
     </footer>
- 
+
     <!-- End of Contact section -->
   </body>
 </html>
