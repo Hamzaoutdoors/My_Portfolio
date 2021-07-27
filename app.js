@@ -15,5 +15,7 @@ menuItem.forEach((item) => {
   item.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     menu.classList.toggle('active');
+    closeIcon1.classList.toggle('d-none');
+    closeIcon2.classList.toggle('d-none');
   });
 });
