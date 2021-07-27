@@ -1,6 +1,6 @@
 # Portfolio project
 
-Portfolio Desktop/Mobile version : 
+Portfolio Desktop/Mobile version + mobile menu: 
 
 ![Template 3-Main](https://user-images.githubusercontent.com/80895497/125659078-db3de05e-7d04-4a01-b28d-ec8cd070644c.png)
 
@@ -22,6 +22,7 @@ The goal for this project is to keep practicing linters, learn how
 - Build a personal portfolio site.
 - Responsive design with Media queries
 - Use images and backgrounds to enhance the look of the website.
+- Learn JavaScript syntax and DOM interface
 
 # Project Portfolio
 
@@ -32,6 +33,7 @@ Additional description about the project and its features.
 Learn how to code responsive website
 Understand the importance of UX.
 Understand how to parse a Figma design to create a UI.
+Understand how to add some dynamics HTML to websites
 
 ## Built With
 
@@ -40,6 +42,7 @@ Understand how to parse a Figma design to create a UI.
    -- FlexBox lay out and Forms
    -- Media queries
   - Linters, Node.js AND GIT
+  - JavaScript
 
 ## Live Demo 
 
@@ -80,7 +83,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : project portfolio (week three)
+- Module 1 : project portfolio (mobile menu)
 
 ## Accessibility Report 
 

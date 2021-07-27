@@ -8,73 +8,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
       type="text/css"
     />
-    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter"
     />
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-202611631-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      add_accessibility
-
-
-      gtag("config", "UA-202611631-1", { send_page_view: false });
-    </script>
-    <script>
-
-      gtag("config", "UA-202611631-1", { send_page_view: false });
-    </script>
-
-    <title>Hamza's Portfolio</title>
-    
+    <script src="./app.js" defer></script>
+    <title>My Portfolio</title>
   </head>
   <body>
-    <!-- Headline section -->
-    <nav>
-      <ul class="nav-list color-white d-flex">
-        <li class="logo"><a href="#">Hamza Ell</a></li>
-        <li>
-          <ul class="d-flex">
-            <li class="nav-item"><a href="#">Portfolio</a></li>
-            <li class="nav-item"><a href="#About">About</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-            <li class="nav-item">
-              <a href="#"><i class="fa fa-envelope"></i></a>
-            </li>
-            <li class="toggle">
-              <a><i class="fa fa-bars"></i></a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <!-- Header -->
+    <nav id="header">
+      <div class="header container">
+        <div class="nav-bar color-white d-flex">
+          <div class="logo"><a href="#">Hamza Ell</a></div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <a class="menu-icon1"><i class="fa fa-bars"></i></a>
+              <a class="menu-icon2 d-none"><i class="fa fa-times"></i></a>
+            </div>
+            <ul class="d-flex flex-dir-col">
+              <li class="nav-item">
+                <a href="#projects" data-after="Home">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" data-after="About">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" data-after="Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
+    <!-- End of Header -->
+    <!-- Hero section -->
 
     <section class="black-section headline-section d-flex flex-dir-col">
       <div class="headline-container d-flex flex-dir-col">
         <div class="headline-title section-title">
-          <h1 class="fw-normal">Hey there.</h1>
-          <h2 class="fw-normal">I am Hamza </h2>
+          <h2 class="fw-normal">hey there.</h2>
+          <h2 class="fw-normal">I am Hamza</h2>
         </div>
         <div class="headline-content">
-          <h3 class="content-title">I am a software developer student</h3>
+          <p class="content-title">I am a software developer student</p>
           <p class="body color-white">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
@@ -120,9 +106,9 @@
       </div>
     </section>
 
-    <!-- End of Headline section -->
+    <!-- End of Hero section -->
     <!-- Projects section -->
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="projects-container">
         <div class="projects-title d-flex flex-dir-col">
           <h2 class="pro-title">My Recent Works</h2>
@@ -261,7 +247,7 @@
     <!-- End of Projects section -->
 
     <!-- About me section -->
-    <section class="black-section about-section">
+    <section id="about" class="black-section about-section">
       <div class="about-container">
         <article class="about-header">
           <div class="section-title about-title">
@@ -362,7 +348,7 @@
     </section>
     <!-- End of About-me section -->
     <!-- Contact section -->
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <div class="contact-container d-flex flex-dir-col">
         <h3 class="contact-title">
           I'm always interested in hearing about new projects, so if you'd like
@@ -376,7 +362,7 @@
                 type="text"
                 id="name"
                 name="user_name"
-                placeholder="Full Name"
+                placeholder="Full name"
                 required
               />
             </li>
@@ -395,7 +381,7 @@
               <textarea
                 id="msg"
                 name="user_message"
-                placeholder="Enter some text here"
+                placeholder="Enter text here"
                 maxlength="500"
                 required
               ></textarea>
