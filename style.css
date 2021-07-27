@@ -107,7 +107,11 @@ ul li {
   line-height: 24px;
 }
 
-.nav-list,
+.skills-language li {
+  min-width: 200px;
+}
+
+.nav-bar,
 .nav-item .multi-poste p,
 .languages > li,
 .skills-language h4,
@@ -115,22 +119,7 @@ ul li {
   font-family: Inter, sans-serif;
 }
 
-.nav-item {
-  font-size: 14px;
-  font-weight: 400;
-  display: none;
-  order: 2;
-  justify-self: flex-end;
-  margin-left: 30px;
-  transition: all 2s ease;
-}
-
-.nav-item:hover {
-  transform: scale(0.8);
-  color: var(--active-color);
-}
-
-.nav-list {
+.nav-bar {
   background: var(--toolbar-color);
   flex-wrap: wrap;
   padding: 5px 25px;
@@ -143,23 +132,6 @@ ul li {
   margin: 0;
 }
 
-.content-title {
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  text-transform: capitalize;
-  color: var(--primary-4);
-}
-
-.toggle {
-  order: 1;
-}
-
-.nav-item:active {
-  display: block;
-}
-
 .black-section {
   background: var(--theme-color);
   min-height: 100vh;
@@ -169,6 +141,15 @@ ul li {
 .headline-container {
   margin-top: 50px;
   align-self: center;
+}
+
+.content-title {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: var(--primary-4);
 }
 
 .section-title {
@@ -256,10 +237,6 @@ ul li {
   font-size: 32px;
 }
 
-.skills-language li {
-  min-width: 200px;
-}
-
 .multi-poste ul li {
   border: 1px solid #212121;
 }
@@ -314,6 +291,64 @@ ul li {
   bottom: 0;
   width: 100%;
 }
+
+/* header styling */
+
+#header .nav-list ul {
+  left: 100%;
+  top: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 11;
+  overflow-x: hidden;
+  list-style: none;
+  position: absolute;
+  background-color: var(--toolbar-color);
+  width: 100vw;
+  height: 100vh;
+  transition: 0.5s ease left;
+  padding: 50px 24px;
+}
+
+#header .nav-list ul li {
+  text-align: start;
+  font-size: 2rem;
+  border-bottom: 0.3px solid #fff;
+  margin-top: 20px;
+  width: 94%;
+  padding: 8px;
+  transition: all 2s ease;
+}
+
+#header .nav-list ul li:nth-child(4) {
+  display: none;
+}
+
+#header .nav-list ul.active {
+  left: 0%;
+}
+
+#header .nav-list ul li:hover a {
+  color: var(--primary-1);
+}
+
+#header .hamburger {
+  z-index: 12;
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(0.8);
+  margin-right: 5px;
+  order: 1;
+}
+
+/* header styling */
 
 /* About section */
 
@@ -441,22 +476,6 @@ textarea {
 
 /* End Contact section */
 
-h4:hover {
-  animation-duration: 0.5s;
-  animation-name: scale;
-}
-
-@keyframes scale {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2.3);
-    font-size: 20px;
-  }
-}
-
 .logo {
   animation-duration: 3s;
   animation-name: rotate;
@@ -476,7 +495,7 @@ h4:hover {
 /* Media queries */
 
 @media all and (min-width: 992px) {
-  .nav-list,
+  .nav-bar,
   .black-section,
   .projects,
   .about-section,
@@ -484,15 +503,53 @@ h4:hover {
     padding: 0 120px;
   }
 
-  .nav-item {
+  #header .nav-list ul {
+    position: initial;
     display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .contact-container form ul li:nth-child(4) {
+    align-self: flex-start;
+  }
+
+  #header .nav-list ul li {
+    display: inline-block;
     width: auto;
     order: 1;
+    font-size: 1rem;
+    font-weight: lighter;
+    justify-self: flex-end;
+    margin-left: 30px;
+    border-bottom: none;
+    transition: all 2s ease;
+    margin-top: 0;
+  }
+
+  #header .nav-list ul li:nth-child(4) {
+    display: inline-block;
+  }
+
+  #header .nav-list ul li a {
+    letter-spacing: 0.2rem;
+  }
+
+  #header .nav-list ul a::after {
+    display: none;
+  }
+
+  #header .nav-list ul li:hover a {
+    color: var(--primary-1);
   }
 
   .logo {
     order: 0;
   }
+
+  /* Headline section */
 
   .headline-section {
     flex-direction: row;
@@ -535,7 +592,10 @@ h4:hover {
     margin-right: 24px;
   }
 
-  .toggle,
+  #header .hamburger {
+    display: none;
+  }
+
   .card-item:nth-child(n + 2) .btn-card,
   .card-item:nth-child(1) .card,
   .image-headline,
@@ -589,9 +649,5 @@ h4:hover {
     width: 40%;
     margin-right: 40px;
     text-align: left;
-  }
-
-  .contact-container form ul li:nth-child(4) {
-    align-self: flex-start;
   }
 }
