@@ -99,14 +99,14 @@ ul li {
   font-weight: normal;
 }
 
-.d-none{
+.d-none {
   display: none;
 }
 
 /* Code */
 
 .multi-poste p,
-.languages>li {
+.languages > li {
   font-size: 16px;
   line-height: 24px;
 }
@@ -117,7 +117,7 @@ ul li {
 
 .nav-bar,
 .nav-item .multi-poste p,
-.languages>li,
+.languages > li,
 .skills-language h4,
 .contact-title {
   font-family: Inter, sans-serif;
@@ -164,7 +164,7 @@ ul li {
   letter-spacing: 0.1rem;
 }
 
-.headline-title>h2 {
+.headline-title > h2 {
   margin: 0;
 }
 
@@ -273,7 +273,7 @@ ul li {
   padding-top: 32%;
 }
 
-.card>h3 {
+.card > h3 {
   font-family: Crete Round, sans-serif;
   font-size: 32px;
   line-height: 44px;
@@ -371,7 +371,7 @@ ul li {
   width: 100%;
 }
 
-.about-title>h2 {
+.about-title > h2 {
   margin-bottom: 10px;
 }
 
@@ -499,7 +499,6 @@ textarea {
 /* Media queries */
 
 @media all and (min-width: 992px) {
-
   .nav-bar,
   .black-section,
   .projects,
