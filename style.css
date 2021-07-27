@@ -43,9 +43,7 @@
   color: #5b5957;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -122,25 +120,6 @@ ul li {
 }
 
 .nav-bar {
-  font-size: 14px;
-  font-weight: 400;
-  display: none;
-  order: 2;
-  justify-self: flex-end;
-  margin-left: 30px;
-  transition: transform 0.8s ease;
-}
-
-.nav-item a {
-  transition: all 0.2s;
-}
-
-.nav-item a:hover {
-  color: var(--active-color);
-  text-shadow: 0.5px 0.5px var(--white);
-}
-
-.nav-list {
   background: var(--toolbar-color);
   flex-wrap: wrap;
   padding: 5px 25px;
@@ -151,6 +130,7 @@ ul li {
   font-weight: 700;
   z-index: 3;
   margin: 0;
+  line-height: 44px;
 }
 
 .black-section {
@@ -181,10 +161,8 @@ ul li {
   letter-spacing: 0.1rem;
 }
 
-.headline-title h1,
-h2 {
+.headline-title > h2 {
   margin: 0;
-  letter-spacing: 3px;
 }
 
 .body {
@@ -193,7 +171,9 @@ h2 {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 30px;
-  max-width: 70vh;
+}
+
+.headline-content .body {
   padding-right: 50px;
 }
 
@@ -241,11 +221,10 @@ h2 {
 .pro-title {
   font-size: 3rem;
   line-height: 40px;
-  width: 450px;
+  width: 400px;
 }
 
 .underline {
-  margin-top: 20px;
   background-color: #212121;
   height: 1px;
   min-width: calc(375px - 24px);
@@ -280,6 +259,10 @@ h2 {
   background-repeat: no-repeat;
   height: 550px;
   transition: transform 1s ease-out;
+}
+
+.card-item:hover {
+  transform: scale(0.9);
 }
 
 .card {
@@ -493,27 +476,6 @@ textarea {
 }
 
 /* End Contact section */
-
-/* scale transistion brought here */
-
-.nav-item:hover {
-  transform: scale(0.8);
-}
-
-.card-item:hover {
-  transform: scale(0.9);
-}
-
-@keyframes scale {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2.3);
-    font-size: 20px;
-  }
-}
 
 .logo {
   animation-duration: 3s;
