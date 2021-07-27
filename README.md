@@ -84,3 +84,12 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Module 1 : project portfolio (mobile menu)
+
+## Accessibility Report 
+
+
+- Page titles (My Portfolio) - no issues found
+- Image text alternatives ("alt="alt text") - no issues found
+- Text headings added
+- No Color contrast needed
+- Resize text added
