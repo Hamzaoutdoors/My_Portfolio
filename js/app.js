@@ -6,6 +6,8 @@ const closeIcon2 = document.querySelector('.menu-icon2');
 const openPopupButtons = document.querySelectorAll(".popup-btn");
 const closeButton = document.querySelector('.close-btn');
 
+// navbar menu 
+
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
@@ -22,12 +24,19 @@ menuItem.forEach((item) => {
   });
 });
 
+
 openPopupButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-document.querySelector('.popup-bg').style.display = "flex";
+  btn.addEventListener('click', () => { 
+   let projectId = event.target.id;
+   document.querySelector('.popup-bg').style.display = "flex";
+   
+   for(let i=0; i< projects.length; i++){
+
+   }
   });
 });
 
 closeButton.addEventListener('click', () =>{
   document.querySelector(".popup-bg").style.display = "none";
 })
+
