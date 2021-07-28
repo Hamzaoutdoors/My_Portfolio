@@ -496,6 +496,86 @@ textarea {
   }
 }
 
+/* Popup section */
+.popup-bg {
+  justify-content: center;
+  position: fixed;
+  opacity: 0.95;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+.popup-overlay-objects {
+  height: 97%;
+  width: 95%;
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 130;
+}
+
+.popup-overlay-objects h3 {
+  font-weight: bold;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #666;
+}
+
+.popup-overlay-objects ul li {
+  border: 1px solid #212121;
+}
+
+.btn-pop {
+  width: 140px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.btn-pop i {
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+/* .btn-pop:nth-child(1)::after {
+  content: "\f017";
+  display: inline-block;
+  margin-left: auto;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+
+} */
+
+.popup-overlay-objects ul {
+  display: grid;
+  grid-template-columns: 80px 150px 140px;
+  column-gap: 10px;
+  padding-left: 0;
+}
+
 /* Media queries */
 
 @media all and (min-width: 992px) {
@@ -588,7 +668,7 @@ textarea {
   }
 
   .multi-poste {
-    height: 80vh;
+    margin-bottom: 30px;
   }
 
   .multi-poste img {
@@ -653,5 +733,37 @@ textarea {
     width: 40%;
     margin-right: 40px;
     text-align: left;
+  }
+
+  /* Popup section */
+
+  .popup-bg {
+    width: 100%;
+    height: 110%;
+  }
+
+  .popup-overlay-objects {
+    height: 85%;
+    width: 85%;
+    margin: 30px 0;
+  }
+
+  .content {
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 40px;
+  }
+
+  .content-image {
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  .content img {
+    width: 100%;
+  }
+
+  .body p {
+    width: 70%;
   }
 }
