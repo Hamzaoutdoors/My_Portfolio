@@ -88,4 +88,9 @@ Give a ⭐️ if you like this project!
 
 - Module 1 : project portfolio (popup window)
 
+## 📝 License
+
+This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
+
+
 

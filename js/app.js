@@ -5,8 +5,6 @@ const closeIcon1 = document.querySelector('.menu-icon1');
 const closeIcon2 = document.querySelector('.menu-icon2');
 const openPopupButtons = document.querySelectorAll('.popup-btn');
 
-// navbar menu
-
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
@@ -23,9 +21,6 @@ menuItem.forEach((item) => {
   });
 });
 
-// Modal window
-
-/* Projects Data */
 const projects = [
   {
     name: 'first project',
@@ -38,7 +33,7 @@ const projects = [
     sourceLink: '#',
   },
   {
-    name: 'Third project',
+    name: 'Second project',
     title: 'Profesional Art Printing Data',
     image: './image_icons/Img_Placeholder.svg',
     technologies: ['html', 'Bootstrap', 'JavaScript ES6'],
@@ -48,7 +43,7 @@ const projects = [
     sourceLink: '#',
   },
   {
-    name: 'Forth project',
+    name: 'Thirth project',
     title: 'Website Protfolio',
     image: './image_icons/Img_Placeholder.svg',
     technologies: ['Sass', 'Codekit', 'Terminal'],
@@ -58,7 +53,7 @@ const projects = [
     sourceLink: '#',
   },
   {
-    name: 'Fifth project',
+    name: 'Forth project',
     title: 'Data Dashboard Healthcare',
     image: './image_icons/Img_Placeholder.svg',
     technologies: ['Sass', 'Bootstrap', 'JQuery'],
@@ -68,12 +63,22 @@ const projects = [
     sourceLink: '#',
   },
   {
-    name: 'Sixth project',
+    name: 'Fifth project',
     title: 'Website Protfolio',
     image: './image_icons/Img_Placeholder.svg',
     technologies: ['Terminal', 'Codepen', 'Github'],
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro aliquam quod repellat harum distinctio quas voluptates eligendi maiores at facilis asperiores, voluptatem placeat cum nostrum nisi quae, natus neque? Minus expedita, aliquid repellat recusandae laboriosam natus culpa odit. ',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    name: 'Sixth project',
+    title: 'Data Dashboard Healthcare',
+    image: './image_icons/Img_Placeholder.svg',
+    technologies: ['css', 'Codepen', 'Git & Github'],
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro aliquam quod repellat harum distinctio quas voluptates eligendi maiores at facilis asperiores, voluptatem placeat cum nostrum nisi quae, natus neque? Minus expedita, aliquid repellat recusandae laboriosam natus culpa odit.',
     liveLink: '#',
     sourceLink: '#',
   },
@@ -87,20 +92,19 @@ const projects = [
     liveLink: '#',
     sourceLink: '#',
   },
+
 ];
 
 const divProject = document.createElement('div');
 
-// add modal function
 function addEvents() {
-  for (let i = 0; i < openPopupButtons.length; i += 1) {
+  for (let i = 0; i < openPopupButtons.length; i++) {
     openPopupButtons[i].addEventListener('click', (ev) => {
       const projectId = ev.target.id;
       divProject.classList.add('popup-overlay-objects');
       document.querySelector('.popup-bg').style.display = 'flex';
-      // create techs
       let techsHTML = '';
-      for (let k = 0; k < projects[i].technologies.length; k += 1) {
+      for (let k = 0; k < projects[i].technologies.length; k ++) {
         techsHTML += `<li><p>${projects[i].technologies[k]}</p></li>`;
       }
       divProject.innerHTML = '<div class="close-btn">+</div>'
@@ -133,20 +137,3 @@ function addEvents() {
 }
 
 addEvents();
-
-/* + `<h3 class="intru-title">${projects[0].title}</h3>`
-+ '<div class="content d-flex flex-dir-col">'
-+ '<div class="content-image">'
-+ `<img src="${projects[projectId].image}" alt="modal-image" />`
-+ '</div>'
-+ '<div class="body d-flex flex-dir-col">'
-+ `<p>${projects[projectId].description}</p>`
-+ '<div class="d-flex pop-buttons">'
-+ '<button class="btn-primary btn-pop d-flex" type="button">'
-+ 'See Live <i class="fa fa-clock-o"></i></button>'
-+ '<button class="btn-primary btn-pop d-flex" type="button">'
-+ 'See Source <i class="fa fa-github"></i></button>'
-+ '</div>'
-+ '</div>'
-+ '</div>';
-console.log(project[0]) */
