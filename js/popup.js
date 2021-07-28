@@ -1,0 +1,66 @@
+// Popup window
+/* Projects Data */
+const projects = [
+    {
+      name: 'Multi-poste',
+      title: 'Multi-Post Stories'
+      imgUrl: './image_icons/social-icons-header/popup-img.svg',
+      techs: ['html', 'bootstrap', 'Ruby on Rails'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",
+      liveLink: '#',
+      sourceLink: '#',
+    },
+    {
+      name: 'first project',
+      title: 'Profesional Art Printing Data',
+      imgUrl: './images/projects/project-detail-img.png',
+      techs: ['css', 'Bootstrap', 'Git & Github'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",
+      liveLink: '#',
+      sourceLink: '#',
+    },
+    {
+      name: 'Third project',
+      title: 'Profesional Art Printing Data',
+      imgUrl: './images/projects/project-detail-img.png',
+      techs: ['html', 'Bootstrap', 'JavaScript ES6'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",
+      liveLink: '#',
+      sourceLink: '#',
+    },
+    {
+      name: 'Forth project',
+      title: 'Profesional Art Printing Data',
+      imgUrl: './images/projects/project-detail-img.png',
+      techs: ['Sass', 'Codekit', 'Terminal'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",
+      liveLink: '#',
+      sourceLink: '#',
+    },
+    {
+      name: 'Fifth project',
+      title: 'Profesional Art Printing Data',
+      imgUrl: './images/projects/project-detail-img.png',
+      techs: ['Sass', 'Bootstrap', 'JQuery'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",
+      liveLink: '#',
+      sourceLink: '#',
+    },
+    {
+      name: 'Sixth project',
+      title: 'Profesional Art Printing Data',
+      imgUrl: './images/projects/project-detail-img.png',
+      techs: ['Terminal', 'Codepen', 'Github'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",    liveLink: '#',
+      sourceLink: '#',
+    },
+    {
+      name: 'last project',
+      title: 'Profesional Art Printing Data',
+      imgUrl: './images/projects/project-detail-img.png',
+      techs: ['css', 'Codepen', 'Git & Github'],
+      description: " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text",
+      liveLink: '#',
+      sourceLink: '#',
+    },
+  ];
