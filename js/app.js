@@ -98,13 +98,13 @@ const projects = [
 const divProject = document.createElement('div');
 
 function addEvents() {
-  for (let i = 0; i < openPopupButtons.length; i++) {
+  for (let i = 0; i < openPopupButtons.length; i + 1) {
     openPopupButtons[i].addEventListener('click', (ev) => {
       const projectId = ev.target.id;
       divProject.classList.add('popup-overlay-objects');
       document.querySelector('.popup-bg').style.display = 'flex';
       let techsHTML = '';
-      for (let k = 0; k < projects[i].technologies.length; k ++) {
+      for (let k = 0; k < projects[i].technologies.length; k + 1) {
         techsHTML += `<li><p>${projects[i].technologies[k]}</p></li>`;
       }
       divProject.innerHTML = '<div class="close-btn">+</div>'
