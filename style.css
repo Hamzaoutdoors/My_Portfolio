@@ -285,6 +285,20 @@ ul li {
   grid-template-columns: 20% 35% 22%;
 }
 
+/* popup languages */
+
+.popup-overlay-objects ul li {
+  border: 1px solid #212121;
+}
+
+.popup-overlay-objects ul {
+  display: grid;
+  grid-template-columns: 80px 150px 140px;
+  column-gap: 10px;
+  padding-left: 0;
+}
+
+/* End of popup languages */
 .card .card-languages li {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
@@ -509,7 +523,7 @@ textarea {
   bottom: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
+  display: none;
 }
 
 .popup-overlay-objects {
@@ -545,10 +559,6 @@ textarea {
   color: #666;
 }
 
-.popup-overlay-objects ul li {
-  border: 1px solid #212121;
-}
-
 .btn-pop {
   width: 140px;
   margin-right: 10px;
@@ -558,22 +568,6 @@ textarea {
 .btn-pop i {
   margin-left: auto;
   font-size: 1rem;
-}
-
-/* .btn-pop:nth-child(1)::after {
-  content: "\f017";
-  display: inline-block;
-  margin-left: auto;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-
-} */
-
-.popup-overlay-objects ul {
-  display: grid;
-  grid-template-columns: 80px 150px 140px;
-  column-gap: 10px;
-  padding-left: 0;
 }
 
 /* Media queries */
