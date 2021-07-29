@@ -130,7 +130,7 @@ function addEvents() {
 
       const deleteDetail = document.querySelector('.close-btn');
       deleteDetail.addEventListener('click', () => {
-        divProject.remove();
+        divProject.remove(); 
         document.querySelector('.popup-bg').style.display = 'none';
       });
     });
@@ -154,7 +154,6 @@ const hasValue = (input) => {
 const showAlertMessage = (input, message) => {
   const msg = input.parentNode.querySelector('small');
   msg.innerText = message;
-
 };
 
 const validateEmail = (input, emailInvalid) => {
@@ -176,7 +175,7 @@ const deleteAlertMessage = () => {
   const msg = document.querySelector('small');
 
   while (emailInput.value === '') {
-    msg.innerHTML = '';
+    msg.innerHTML = ''; 
   }
 };
 
