@@ -1,9 +1,10 @@
 # Portfolio project
 
-Portfolio Desktop/Mobile version + mobile menu: 
+Portfolio Desktop/Mobile version + popup window: 
 
 ![Template 3-Main](https://user-images.githubusercontent.com/80895497/125659078-db3de05e-7d04-4a01-b28d-ec8cd070644c.png)
 
+![popup ss](https://user-images.githubusercontent.com/80895497/127324176-a8f124f9-c1a1-47a5-8cb9-28d7788facc0.PNG)
 
 
 Screenshot of Template 2, that I choose for my my Portfolio
@@ -23,17 +24,19 @@ The goal for this project is to keep practicing linters, learn how
 - Responsive design with Media queries
 - Use images and backgrounds to enhance the look of the website.
 - Learn JavaScript syntax and DOM interface
+- Add popup window and store data in JavaScript
 
 # Project Portfolio
 
-> Project is "Portfolio: desktop version"
+> Project is "Portfolio: add popup window (desktop/mobile)"
 
 Additional description about the project and its features.
 
-Learn how to code responsive website
-Understand the importance of UX.
-Understand how to parse a Figma design to create a UI.
-Understand how to add some dynamics HTML to websites
+- learn how to implement html and css code with js 
+- Learn how to code responsive website
+- Understand the importance of UX.
+- Understand how to parse a Figma design to create a UI.
+- Understand how to add some dynamics HTML to websites
 
 ## Built With
 
@@ -52,8 +55,6 @@ Understand how to add some dynamics HTML to websites
 
 ## Getting Started
 
-**This is the third project of my module 1 in this I set up the linters and build the first 3 sections of the mobile website using the template I chose in the "Sneak peek: your portfolio" step**
-
 To get a local copy up and running follow these simple example steps.
 
 clone : git@github.com:Hamzaoutdoors/Review-my-project-from-trials-.git on your local machine and feel free
@@ -64,12 +65,14 @@ linters set Up
 
 Node updated version
 
-## Author
+## Authors
 
 👤 **EllaouziHamza**
+👤 **CarlosFeliz**
 
 - GitHub: [@hamzaoutdoors](https://github.com/Hamzaoutdoors)
-- LinkedIn: [@Ellaouzihamza](https://www.linkedin.com/in/hamza-ellaouzi-137a45b8/)
+- GitHub: [@xJokeer](https://github.com/xJokeer)
+
 
 ## 🤝 Contributing
 
@@ -83,13 +86,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : project portfolio (mobile menu)
+- Module 1 : project portfolio (popup window)
 
-## Accessibility Report 
+## 📝 License
+
+This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
 
 
-- Page titles (My Portfolio) - no issues found
-- Image text alternatives ("alt="alt text") - no issues found
-- Text headings added
-- No Color contrast needed
-- Resize text added
+
