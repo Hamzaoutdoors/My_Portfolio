@@ -1,3 +1,5 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable no-tabs */
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menuItem = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -136,3 +138,57 @@ function addEvents() {
 }
 
 addEvents();
+
+// Validate email Section
+
+const contactForm = document.getElementById('signup');
+const emailInvalid = 'Please enter a correct email address format';
+
+const hasValue = (input) => {
+  if (input.value === '') {
+    return false;
+  }
+  return true;
+};
+
+const showAlertMessage = (input, message) => {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+
+};
+
+const validateEmail = (input, emailInvalid) => {
+	 if (!hasValue(input)) {
+    return false;
+  }
+
+  const regex = /[A-Z]/g;
+
+  const email = input.value.trim();
+  if (regex.test(email)) {
+    return showAlertMessage(input, emailInvalid);
+  }
+	  return true;
+};
+
+const deleteAlertMessage = () => {
+  const emailInput = contactForm.elements[1];
+  const msg = document.querySelector('small');
+
+  while (emailInput.value === '') {
+    msg.innerHTML = '';
+  }
+};
+
+contactForm.addEventListener('submit', (ev) => {
+  const emailInput = contactForm.elements[1];
+  if (validateEmail(emailInput, emailInvalid)) {
+    deleteAlertMessage();
+  } else {
+    ev.preventDefault();
+  }
+});
+
+/* form.elements[1];
+form.elements['email']; 
+form.elements['user_email'] */
