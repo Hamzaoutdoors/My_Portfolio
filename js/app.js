@@ -227,3 +227,9 @@ const displayData = () => {
   }
 };
 displayData();
+
+// Additional features
+const borderDisplay = () => {
+  document.querySelector('textarea').style.border = '1px solid #333';
+};
+borderDisplay();
