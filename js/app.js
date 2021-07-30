@@ -179,12 +179,12 @@ const deleteAlertMessage = () => {
   }
 };
 
-contactForm.addEventListener('submit', (ev) => {
+contactForm.addEventListener('submit', () => {
   const emailInput = contactForm.elements[1];
   if (validateEmail(emailInput, emailInvalid)) {
     deleteAlertMessage();
   } else {
-    ev.preventDefault();
+    // ev.preventDefault();
   }
 });
 
