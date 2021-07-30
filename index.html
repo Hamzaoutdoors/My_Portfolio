@@ -357,7 +357,7 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h3>
-        <form action="https://formspree.io/f/mayadege" method="post" id="signup">
+        <form action="https://formspree.io/f/mayadege" method="post" id="signup" autocomplete="off">
           <ul class="d-flex flex-dir-col">
             <li>
               <label for="name"></label>
@@ -366,7 +366,9 @@
                 id="name"
                 name="user_name"
                 placeholder="Full name"
+                class="input"
                 required
+                onchange="signUp()"
               />
             </li>
             <li class="input-container">
@@ -374,8 +376,10 @@
               <input
                 type="email"
                 id="email"
+                class="input"
                 name="user_email"
                 placeholder="Email adress"
+                onchange="signUp()"
                 required
               />
               <small class="validation-text"></small>
@@ -387,6 +391,9 @@
                 name="user_message"
                 placeholder="Enter text here"
                 maxlength="500"
+                class="input"
+                onchange="signUp()"
+                onclick="borderDisplay()"
                 required
               ></textarea>
             </li>

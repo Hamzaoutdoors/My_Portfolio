@@ -46,6 +46,8 @@ Additional description about the project and its features.
    -- Media queries
   - Linters, Node.js AND GIT
   - JavaScript
+   -- Validation 
+   -- Store data with local storage
 
 ## Live Demo 
 
@@ -86,7 +88,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : project portfolio (popup window)
+- Module 1 : 
+ -- project portfolio (popup window)
+ -- project portfolio (validation contact form)
+ -- project portfolio (local storage)
+
 
 ## 📝 License
 

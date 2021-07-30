@@ -136,7 +136,6 @@ function addEvents() {
     });
   }
 }
-
 addEvents();
 
 // Validate email Section
@@ -188,6 +187,49 @@ contactForm.addEventListener('submit', (ev) => {
   }
 });
 
-/* form.elements[1];
-form.elements['email'];
-form.elements['user_email'] */
+// Local Storage
+
+function isLocalStorageAvailable() {
+  try {
+    const valueToStore = 'test';
+    const mykey = 'key';
+    localStorage.setItem(mykey, valueToStore);
+    const recoveredValue = localStorage.getItem(mykey);
+    localStorage.removeItem(mykey);
+
+    return recoveredValue === valueToStore;
+  } catch (e) {
+    return false;
+  }
+}
+
+let formData = {};
+// eslint-disable-next-line no-unused-vars
+const signUp = () => {
+  if (isLocalStorageAvailable()) {
+    const nameInput = contactForm.elements[0].value;
+    const emailInput = contactForm.elements[1].value;
+    const messageInput = contactForm.elements[2].value;
+    formData = { nameInput, emailInput, messageInput };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
+};
+
+const displayData = () => {
+  const inputs = document.querySelectorAll('.input');
+  const savedData = JSON.parse(localStorage.getItem('formData'));
+  const data = { ...savedData };
+
+  if (!Object.values(data).every((o) => o === '')) {
+    for (let i = 0; i < inputs.length; i += 1) {
+      inputs[i].value = Object.values(data)[i];
+    }
+  }
+};
+displayData();
+
+// Additional features
+const borderDisplay = () => {
+  document.querySelector('textarea').style.border = '1px solid #333';
+};
+borderDisplay();
