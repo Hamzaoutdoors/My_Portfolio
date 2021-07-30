@@ -46,6 +46,8 @@ Additional description about the project and its features.
    -- Media queries
   - Linters, Node.js AND GIT
   - JavaScript
+   -- Validation 
+   -- Store data with local storage
 
 ## Live Demo 
 
