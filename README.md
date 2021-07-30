@@ -88,7 +88,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Module 1 : project portfolio (popup window)
+- Module 1 : 
+ -- project portfolio (popup window)
+ -- project portfolio (validation contact form)
+ -- project portfolio (local storage)
+
 
 ## 📝 License
 
