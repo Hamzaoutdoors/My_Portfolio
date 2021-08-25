@@ -26,23 +26,23 @@ menuItem.forEach((item) => {
 const projects = [
   {
     name: 'first project',
-    title: 'Profesional Art Printing Data',
-    image: './image_icons/Img_Placeholder.svg',
-    technologies: ['css', 'Bootstrap', 'Git & Github'],
+    title: 'Coding & Outdoors meeting Website',
+    image: './image_icons/Projects_ss/first_project/project1_ss.png',
+    technologies: ['HTML', 'Bootstrap', 'JavaScript'],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro aliquam quod repellat harum distinctio quas voluptates eligendi maiores at facilis asperiores, voluptatem placeat cum nostrum nisi quae, natus neque? Minus expedita, aliquid repellat recusandae laboriosam natus culpa odit. Dolorum excepturi',
-    liveLink: '#',
-    sourceLink: '#',
+      'The project is about a website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy. The website contains 2 pages, main page where I introduced the idea about the meeting, the about page where I presented the meeting and some previous activities, all the pages are responsive (breakpoint 768px)',
+    liveLink: 'https://hamzaoutdoors.github.io/Code_Outdoors_Meetings/',
+    sourceLink: 'https://github.com/Hamzaoutdoors/Code_Outdoors_Meetings',
   },
   {
     name: 'Second project',
-    title: 'Profesional Art Printing Data',
-    image: './image_icons/Img_Placeholder.svg',
-    technologies: ['html', 'Bootstrap', 'JavaScript ES6'],
+    title: 'Coding & Outdoors meeting Website',
+    image: './image_icons/Projects_ss/first_project/project1_ss.png',
+    technologies: ['HTML', 'Bootstrap', 'JavaScript'],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro aliquam quod repellat harum distinctio quas voluptates eligendi maiores at facilis asperiores, voluptatem placeat cum nostrum nisi quae, natus neque? Minus expedita, aliquid r',
-    liveLink: '#',
-    sourceLink: '#',
+    'The project is about a website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy. The website contains 2 pages, main page where I introduced the idea about the meeting, the about page where I presented the meeting and some previous activities, all the pages are responsive (breakpoint 768px)',
+    liveLink: 'https://hamzaoutdoors.github.io/Code_Outdoors_Meetings/',
+    sourceLink: 'https://github.com/Hamzaoutdoors/Code_Outdoors_Meetings',
   },
   {
     name: 'Thirth project',
@@ -112,16 +112,15 @@ function addEvents() {
       + `<h3 class="intru-title">${projects[projectId].title}</h3>`
       + `<ul class="languages">${techsHTML}</ul>`
       + '<div class="content d-flex flex-dir-col">'
-      + '<div class="content-image">'
+      + '<div class="content-image d-flex">'
       + `<img src="${projects[projectId].image}" alt="modal-image" />`
       + '</div>'
       + '<div class="body d-flex flex-dir-col">'
       + `<p>${projects[projectId].description}</p>`
       + '<div class="d-flex pop-buttons">'
-      + '<button class="btn-primary btn-pop d-flex" type="button">'
-      + 'See Live <i class="fa fa-clock-o"></i></button>'
-      + '<button class="btn-primary btn-pop d-flex" type="button">'
-      + 'See Source <i class="fa fa-github"></i></button>'
+      + `<a href="${projects[projectId].liveLink}" target="_blank"><button class="btn-primary btn-pop d-flex" type="button">See Live<i class="fa fa-clock-o"></i></button></a>`
+      + `<a href="${projects[projectId].sourceLink}" target="_blank"><button class="btn-primary btn-pop d-flex" type="button">`
+      + 'See Source <i class="fa fa-github"></i></button></a>'
       + '</div>'
       + '</div>'
       + '</div>';

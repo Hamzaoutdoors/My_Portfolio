@@ -259,7 +259,7 @@ ul li {
   background-image: url(./image_icons/project_item.svg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   height: 550px;
   transition: transform 1s ease-out;
 }
@@ -545,6 +545,16 @@ textarea {
   align-items: center;
 }
 
+.content-image {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content img {
+  width: 95%;
+}
+
 .close-btn {
   position: absolute;
   top: 0;
@@ -677,8 +687,9 @@ small {
   }
 
   .multi-poste img {
-    width: 300vh;
+    width: 100vh;
     margin-right: 24px;
+    border: 2px solid black;
   }
 
   #header .hamburger {
