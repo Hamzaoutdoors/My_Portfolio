@@ -4,9 +4,9 @@ Portfolio Desktop/Mobile version + popup window:
 
 ![Template 3-Main](https://user-images.githubusercontent.com/80895497/125659078-db3de05e-7d04-4a01-b28d-ec8cd070644c.png)
 
-![popup ss](https://user-images.githubusercontent.com/80895497/127324176-a8f124f9-c1a1-47a5-8cb9-28d7788facc0.PNG)
-
-
+<p align="center">
+  <img alt="popup" src="https://user-images.githubusercontent.com/80895497/127324176-a8f124f9-c1a1-47a5-8cb9-28d7788facc0.PNG">
+</p>
 Screenshot of Template 2, that I choose for my my Portfolio
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
