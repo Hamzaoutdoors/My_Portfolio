@@ -1,5 +1,11 @@
 <div align="center">
   <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/></div>
+ 
+  </br>
+ <div align="center">
+  <em align="center" style>" All our dreams can come true, if we have the courage to pursue them. "</em><strong> - Walt Disney</strong>
+  </div>
+  
 # Portfolio project
 
 Portfolio Desktop/Mobile version + popup window: 
