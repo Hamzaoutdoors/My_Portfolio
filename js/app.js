@@ -1,31 +1,33 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-tabs */
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const navList = document.getElementById('nav-list');
 const menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menuItem = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const menuItem = document.querySelectorAll('.header .nav-bar .nav-list menu-icon2 ul li a');
 const closeIcon1 = document.querySelector('.menu-icon1');
-const closeIcon2 = document.querySelector('.menu-icon2');
+const closeSideBar = document.getElementById('close-navbar');
 const openPopupButtons = document.querySelectorAll('.popup-btn');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
   closeIcon1.classList.toggle('d-none');
-  closeIcon2.classList.toggle('d-none');
+  closeSideBar.classList.toggle('d-none');
 });
 
 menuItem.forEach((item) => {
   item.addEventListener('click', () => {
+    navList.classList.toggle('d-none');
     hamburger.classList.toggle('active');
     menu.classList.toggle('active');
     closeIcon1.classList.toggle('d-none');
-    closeIcon2.classList.toggle('d-none');
+    closeSideBar.classList.toggle('d-none');
   });
 });
 
 const projects = [
   {
-    name: 'first project',
+    name: 'HTML & CSS Capstone',
     title: 'Coding & Outdoors meeting Website',
     image: './image_icons/Projects_ss/first_project/project1_ss.png',
     technologies: ['HTML', 'Bootstrap', 'JavaScript'],
@@ -35,24 +37,24 @@ const projects = [
     sourceLink: 'https://github.com/Hamzaoutdoors/Code_Outdoors_Meetings',
   },
   {
-    name: 'Second project',
-    title: 'Coding & Outdoors meeting Website',
+    name: 'HTML & CSS Capstone',
+    title: 'Coding & Outdoors Website',
     image: './image_icons/Projects_ss/first_project/project1_ss.png',
     technologies: ['HTML', 'Bootstrap', 'JavaScript'],
     description:
-    'The project is about a website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy. The website contains 2 pages, main page where I introduced the idea about the meeting, the about page where I presented the meeting and some previous activities, all the pages are responsive (breakpoint 768px)',
+    'The project is about a website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy. The website contains 2 pages, main page where I introduced the idea about the meeting.',
     liveLink: 'https://hamzaoutdoors.github.io/Code_Outdoors_Meetings/',
     sourceLink: 'https://github.com/Hamzaoutdoors/Code_Outdoors_Meetings',
   },
   {
-    name: 'Thirth project',
-    title: 'Website Protfolio',
-    image: './image_icons/Img_Placeholder.svg',
-    technologies: ['Sass', 'Codekit', 'Terminal'],
+    name: 'JavaScript Capstone',
+    title: 'Serie lover Website',
+    image: './image_icons/Projects_ss/js-project/js-project.png',
+    technologies: ['API', 'Bootstrap', 'JS - ES6'],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro aliquam quod repellat harum distinctio quas voluptates eligendi maiores at facilis asperiores, voluptatem placeat cum nostrum nisi quae, natus neque? Minus expedita,',
-    liveLink: '#',
-    sourceLink: '#',
+      'The Series lover website displays scores submitted by different series. It also allows users to submit their comments in every serie show. All data is preserved thanks to the external <a href="https://www.tvmaze.com/api" class="link-popup">TVmaze API</a>, the user can like his favourite serie thanks to <a href="https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270" class="link-popup">Involvement API</a>',
+    liveLink: 'https://hamzaoutdoors.github.io/Serie_Lovers---JS-Capstone-/',
+    sourceLink: 'https://github.com/Hamzaoutdoors/Serie_Lovers---JS-Capstone-',
   },
   {
     name: 'Forth project',
