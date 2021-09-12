@@ -26,10 +26,10 @@
       <div class="header container">
         <div class="nav-bar color-white d-flex">
           <div class="logo"><a href="#">Hamza Ell</a></div>
-          <div class="nav-list">
+          <div class="nav-list" id="nav-list">
             <div class="hamburger">
               <a class="menu-icon1"><i class="fa fa-bars"></i></a>
-              <a class="menu-icon2 d-none"><i class="fa fa-times"></i></a>
+              <a class="menu-icon2 d-none" id="close-navbar"><i class="fa fa-times"></i></a>
             </div>
             <ul class="d-flex flex-dir-col">
               <li class="nav-item">
@@ -97,7 +97,7 @@
           </ul>
         </div>
       </div>
-      <div class="image-headline">
+      <div class="image-headline d-none">
         <img
           src="./image_icons/desctop__images/big-header.svg"
           alt="background-headline"
@@ -142,11 +142,14 @@
           </article>
         </div>
         <div class="cards-container d-grid">
-          <article class="card-item d-flex d-flex">
+          <article class="card-item d-flex">
             <div class="card color-white">
-              <h3 class="fw-normal">Coding&Outdoors meeting</h3>
+              <div class="project-icon">
+                <img src="./image_icons/Projects_ss/first_project/logo-html-capstone.png" alt="project-logo">
+              </div>
+              <h3 class="fw-normal">Coding & Outdoors meeting</h3>
               <p>
-                website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy.
+                website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy. the project is practice of HTML&CSS.
               </p>
               <ul class="languages card-languages">
                 <li><p>html</p></li>
@@ -160,15 +163,17 @@
           </article>
           <article class="card-item d-flex">
             <div class="card color-white">
-              <h3 class="fw-normal">Profesional Art Printing Data</h3>
+              <div class="project-icon">
+                <img src="./image_icons/Projects_ss/js-project/watch-it-logo.png" alt="project-logo">
+              </div>
+              <h3 class="fw-normal">JS-Capstone: Series lover</h3>
               <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
+                The Series lover website displays scores submitted by different series. It also allows users to submit their comments in every serie show.
               </p>
               <ul class="languages card-languages">
-                <li><p>html</p></li>
+                <li><p>JS</p></li>
                 <li><p>bootsrap</p></li>
-                <li><p>Ruby</p></li>
+                <li><p>API</p></li>
               </ul>
             </div>
             <button id="2" class="popup-btn btn-primary btn-card" type="button">
@@ -266,7 +271,7 @@
             Get My Resume
           </button>
         </article>
-        <div class="image-container image-about">
+        <div class="image-container image-about d-none">
           <img
             src="./image_icons/desctop__images/big-aboutme.svg"
             alt="frame-image"
