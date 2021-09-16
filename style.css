@@ -103,6 +103,22 @@ ul li {
   display: none;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 20%;
+}
+
 /* Code */
 
 .multi-poste p,
@@ -330,6 +346,9 @@ ul li {
 }
 
 /* header styling */
+.skills-language li > ul {
+  grid-template-columns: none;
+}
 
 #header .nav-list ul {
   left: 100%;
@@ -385,6 +404,17 @@ ul li {
   order: 1;
 }
 
+.under {
+  background-color: var(--white);
+  align-self: center;
+  height: 1px;
+  margin: 5px;
+}
+
+.underline-container {
+  margin-top: 7rem;
+}
+
 /* header styling */
 
 /* About section */
@@ -429,7 +459,8 @@ ul li {
 }
 
 .skills-container {
-  grid-template-columns: repeat(1, 45% [col-start]);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
   justify-content: center;
   align-content: center;
 }
@@ -438,12 +469,25 @@ ul li {
   font-family: InaiMathi, sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
-  margin-left: 30px;
+  color: var(--primary-1);
+  transition: trastext-shadow 10s ease-out;
+}
+
+.popup-overlay-objects h3 {
+  font-weight: bold;
+}
+
+.skill-title h3:hover {
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
 }
 
 .skills-language h4 {
   font-weight: normal;
   font-size: 22px;
+}
+
+.skills-language {
+  grid-template-columns: none;
 }
 
 /* End About section */
@@ -555,10 +599,6 @@ textarea {
   z-index: 130;
 }
 
-.popup-overlay-objects h3 {
-  font-weight: bold;
-}
-
 .content {
   justify-content: center;
   align-items: center;
@@ -620,7 +660,7 @@ small {
 
 /* Media queries */
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 892px) {
   .nav-bar,
   .black-section,
   .projects,
@@ -681,14 +721,6 @@ small {
     display: block;
   }
 
-  .image-headline img {
-    position: relative;
-    width: 550px;
-    height: 550px;
-    left: 35vw;
-    top: -40vw;
-  }
-
   .headline-section {
     flex-direction: row;
     background-image: url("./image_icons/desctop__images/desktop-header.svg");
@@ -710,6 +742,10 @@ small {
 
   .headline-content .social-icon .social-item {
     margin-bottom: 20px;
+  }
+
+  .under {
+    display: none;
   }
 
   .projects-title {
