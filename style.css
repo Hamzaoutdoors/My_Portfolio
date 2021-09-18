@@ -547,12 +547,13 @@ textarea {
 
 .footer .social-icon {
   align-self: center;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .footer .footer-bar {
   text-align: center;
   margin-top: 0;
+  height: 30px;
 }
 
 /* End Contact section */
@@ -842,5 +843,11 @@ small {
   .body p {
     width: 70%;
     margin-bottom: 4rem;
+  }
+
+  /* Footer */
+
+  .footer .footer-bar {
+    display: none;
   }
 }
