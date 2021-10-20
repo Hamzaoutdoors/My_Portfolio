@@ -294,7 +294,14 @@ ul li {
   background: linear-gradient(to right, #181818, #ba8b02);
 }
 
-.card-item:nth-child(3),
+.card-item:nth-child(3) {
+  background: linear-gradient(to right, #f5ca79 0%, #d69926 100%);
+}
+
+.card-item:nth-child(4) {
+  background: linear-gradient(to right, #d18700 0%, #754c00 100%);
+}
+
 .card-item:nth-child(6) {
   background-image: url("./image_icons/desctop__images/backgroundImg-card3.svg");
 }
@@ -343,6 +350,15 @@ ul li {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.span-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-span {
+  list-style: square;
 }
 
 /* header styling */
