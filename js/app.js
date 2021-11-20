@@ -27,14 +27,14 @@ menuItem.forEach((item) => {
 
 const projects = [
   {
-    name: 'HTML & CSS Capstone',
-    title: 'Coding & Outdoors meeting Website',
-    image: './image_icons/Projects_ss/first_project/project1_ss.png',
-    technologies: ['HTML', 'Bootstrap', 'JavaScript'],
+    name: 'React & Redux Capstone Project',
+    title: 'Corona Tracker',
+    image: './image_icons/Projects_ss/react-projects/popup-corona.png',
+    technologies: ['Redux', 'React.js', 'Bootstrap'],
     description:
-      'The project is about a website of travelling and coding meetings, a place where passionate people about travelling meet, learn, and enjoy. The website contains 2 pages, main page where I introduced the idea about the meeting, the about page where I presented the meeting and some previous activities, all the pages are responsive (breakpoint 768px)',
-    liveLink: 'https://hamzaoutdoors.github.io/Code_Outdoors_Meetings/',
-    sourceLink: 'https://github.com/Hamzaoutdoors/Code_Outdoors_Meetings',
+      'A SPA web application for checking and tracking daily information about COVID 19 in the big European Countries using React & Redux. The webapp have several pages Home page with a list of european countries that can be filtered by the country, and detail page for more detail about the country by clicking on it with number of infected and deaths. </br> For this project I interacted with <a href="https://covid19tracking.narrativa.com/index_en.html" class="link-popup">Narrativa API</a>',
+    liveLink: 'https://ho-coronatracker21.netlify.app/',
+    sourceLink: 'https://github.com/Hamzaoutdoors/Corona-Tracker__react-capstone',
   },
   {
     name: 'HTML & CSS Capstone',
