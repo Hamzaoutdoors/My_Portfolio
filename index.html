@@ -93,10 +93,15 @@
     </div>
     <script>
       const tween = KUTE.fromTo(
-        '#blob1',
-        { path: '#blob1' },
-        { path: '#blob2' },
-        { repeat: 999, duration: 3000, yoyo: true }
+        '#blob1', {
+          path: '#blob1'
+        }, {
+          path: '#blob2'
+        }, {
+          repeat: 999,
+          duration: 3000,
+          yoyo: true
+        }
       ).start();
     </script>
   </section>
@@ -110,27 +115,23 @@
         <span class="underline"></span>
       </div>
       <div class="multi-poste d-flex flex-dir-col">
-        <img src="./image_icons/Projects_ss/first_project/project1_ss.png" alt="image_Placeholder" />
+        <img src="./image_icons/Projects_ss/react-projects/popup-corona.png" alt="image_Placeholder" class="current-project"/>
         <article class="d-flex flex-dir-col">
-          <h3 class="intru-title">Coding & Outdoors Meeting</h3>
+          <h3 class="intru-title">Corona Tracker</h3>
           <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
+            A SPA web application for checking and tracking COVID 19 around
+            the world using React and Redux. The web app contains several
+            pages (Home and details).
           </p>
           <ul class="languages">
             <li>
-              <p>css</p>
+              <p>React</p>
             </li>
             <li>
-              <p>html</p>
+              <p>Redux</p>
             </li>
             <li>
-              <p>bootsrap</p>
-            </li>
-            <li>
-              <p>JavaScript</p>
+              <p>Bootstrap</p>
             </li>
           </ul>
           <button id="0" class="popup-btn btn-primary btn-project" type="button">

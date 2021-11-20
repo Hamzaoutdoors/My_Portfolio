@@ -218,6 +218,11 @@ ul li {
   margin: 24px;
 }
 
+.current-project {
+  border-radius: 25px;
+  height: 50vh;
+}
+
 .pro-title,
 .intru-title {
   font-family: Crete Round, sans-serif;
