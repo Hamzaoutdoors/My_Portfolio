@@ -154,7 +154,7 @@ ul li {
 
 .black-section {
   background: var(--theme-color);
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 24px;
 }
 
@@ -431,6 +431,39 @@ ul li {
   margin-top: 7rem;
 }
 
+.spacer {
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer1 {
+  background-image: url("./image_icons/desctop__images/layer1.svg");
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+/* Blobs SVG background image via https://haikei.app/ */
+
+.blob-motion {
+  position: absolute;
+  transform: translate(-30%, -5%);
+  z-index: 0;
+}
+
+.blob-content {
+  z-index: 1;
+}
+
+.blobs {
+  width: 100%;
+  background-image: url("./image_icons/desctop__images/blobs.svg") no-repeat bottom / cover;
+}
+
 /* header styling */
 
 /* About section */
@@ -504,6 +537,10 @@ ul li {
 
 .skills-language {
   grid-template-columns: none;
+}
+
+.layer2 {
+  background-image: url("./image_icons/desctop__images/layer2.svg");
 }
 
 /* End About section */
@@ -733,6 +770,10 @@ small {
   }
 
   /* Headline section */
+  .blob-motion {
+    transform: translate(-30%, 30%);
+  }
+
   .image-headline {
     max-height: 45vh;
     display: block;
@@ -761,7 +802,7 @@ small {
     margin-bottom: 20px;
   }
 
-  .under {
+  .spacer {
     display: none;
   }
 
