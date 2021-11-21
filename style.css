@@ -617,8 +617,14 @@ textarea {
 /* End Contact section */
 
 .logo {
-  animation-duration: 3s;
-  animation-name: rotate;
+  font-size: 1.5rem;
+  width: 200px;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  margin-top: -5px;
 }
 
 @keyframes rotate {
@@ -768,10 +774,6 @@ small {
 
   #header .nav-list ul li:hover a {
     color: var(--primary-1);
-  }
-
-  .logo {
-    order: 0;
   }
 
   /* Headline section */
